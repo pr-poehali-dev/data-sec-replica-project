@@ -31,7 +31,7 @@ const Contacts = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-3xl font-bold text-secondary mb-8 text-center">Наши контакты</h2>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto">
                 <Card className="border-gray-200">
                   <CardHeader>
                     <CardTitle className="flex items-center gap-3 text-secondary">
@@ -45,21 +45,6 @@ const Contacts = () => {
                     <a href="tel:+79015000078" className="text-lg font-semibold text-secondary hover:text-primary transition-colors block">+7 (901) 500-00-78</a>
                     <a href="tel:+79015000087" className="text-lg font-semibold text-secondary hover:text-primary transition-colors block">+7 (901) 500-00-87</a>
                     <p className="text-sm text-muted-foreground mt-1">Пн-Пт: 9:00 - 18:00</p>
-                  </CardContent>
-                </Card>
-
-                <Card className="border-gray-200">
-                  <CardHeader>
-                    <CardTitle className="flex items-center gap-3 text-secondary">
-                      <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
-                        <Icon name="Mail" className="text-primary" size={20} />
-                      </div>
-                      Email
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <a href="mailto:info@security-center.ru" className="text-lg font-semibold text-secondary hover:text-primary transition-colors block">info@security-center.ru</a>
-                    <p className="text-sm text-muted-foreground mt-1">Ответим в течение 24 часов</p>
                   </CardContent>
                 </Card>
 

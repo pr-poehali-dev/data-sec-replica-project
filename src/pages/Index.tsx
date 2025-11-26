@@ -263,8 +263,8 @@ const Index = () => {
             <p className="text-center text-muted-foreground mb-12">
               Наши специалисты ответят на любой ваш вопрос
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <Card className="border-gray-200">
+            <div className="flex justify-center">
+              <Card className="border-gray-200 max-w-md w-full">
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2 text-secondary">
                     <Icon name="Phone" className="text-primary" size={24} />
@@ -275,18 +275,6 @@ const Index = () => {
                   <a href="tel:+79015000078" className="text-lg font-semibold text-secondary hover:text-primary transition-colors block">+7 (901) 500-00-78</a>
                   <a href="tel:+79015000087" className="text-lg font-semibold text-secondary hover:text-primary transition-colors block">+7 (901) 500-00-87</a>
                   <p className="text-sm text-muted-foreground">Пн-Пт: 9:00 - 18:00</p>
-                </CardContent>
-              </Card>
-              <Card className="border-gray-200">
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-2 text-secondary">
-                    <Icon name="Mail" className="text-primary" size={24} />
-                    Email
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <a href="mailto:info@security-center.ru" className="text-lg font-semibold text-secondary hover:text-primary transition-colors block">info@security-center.ru</a>
-                  <p className="text-sm text-muted-foreground">Ответим в течение 24 часов</p>
                 </CardContent>
               </Card>
             </div>
