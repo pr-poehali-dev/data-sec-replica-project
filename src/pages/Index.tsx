@@ -207,7 +207,7 @@ const Index = () => {
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
               <div>
-                <div className="text-5xl font-bold text-primary mb-2">500+</div>
+                <div className="text-5xl font-bold text-primary mb-2">100+</div>
                 <p className="text-blue-100">Завершенных проектов</p>
               </div>
               <div>
