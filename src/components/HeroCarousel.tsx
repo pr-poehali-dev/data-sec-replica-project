@@ -150,18 +150,18 @@ const HeroCarousel = () => {
 
       <button
         onClick={goToPrevSlide}
-        className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/80 hover:bg-white flex items-center justify-center transition-colors z-10"
+        className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-black/30 hover:bg-black/50 backdrop-blur-sm flex items-center justify-center transition-all z-10 opacity-70 hover:opacity-100"
         aria-label="Предыдущий слайд"
       >
-        <ChevronLeft size={24} className="text-gray-900" />
+        <ChevronLeft size={24} className="text-white" />
       </button>
 
       <button
         onClick={goToNextSlide}
-        className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/80 hover:bg-white flex items-center justify-center transition-colors z-10"
+        className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-black/30 hover:bg-black/50 backdrop-blur-sm flex items-center justify-center transition-all z-10 opacity-70 hover:opacity-100"
         aria-label="Следующий слайд"
       >
-        <ChevronRight size={24} className="text-gray-900" />
+        <ChevronRight size={24} className="text-white" />
       </button>
 
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-2 z-10">
