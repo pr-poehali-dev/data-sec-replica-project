@@ -176,9 +176,9 @@ const About = () => {
                   <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                     <Icon name="Award" className="text-primary" size={32} />
                   </div>
-                  <h4 className="font-semibold text-secondary mb-2">Все лицензии</h4>
+                  <h4 className="font-semibold text-secondary mb-2">Комплексный подход</h4>
                   <p className="text-gray-700 text-sm">
-                    Полный пакет лицензий ФСТЭК и ФСБ для работы с любыми классами информации
+                    Полный спектр услуг от аудита до внедрения и сопровождения систем защиты
                   </p>
                 </div>
 
