@@ -9,14 +9,14 @@ const Header = () => {
   const menuItems = [
     {
       label: 'Услуги и решения',
-      href: '/services',
+      href: '#',
       dropdown: [
         { label: 'Персональные данные', href: '/services/personal-data' },
-        { label: 'Критическая информационная инфраструктура (КИИ)', href: '/services/kii' },
-        { label: 'Конфиденциальная информация', href: '/services/confidential' },
+        { label: 'Критическая информационная инфраструктура (КИИ)', href: '/services/personal-data' },
+        { label: 'Конфиденциальная информация', href: '/services/personal-data' },
         { label: 'Аттестация объектов информатизации', href: '/services/attestation' },
-        { label: 'Защищенные приложения', href: '/services/secure-apps' },
-        { label: 'Средства защиты информации', href: '/services/protection-tools' },
+        { label: 'Защищенные приложения', href: '/services/attestation' },
+        { label: 'Средства защиты информации', href: '/services/attestation' },
         { label: 'Консалтинг и обучение', href: '/services/consulting' }
       ]
     },

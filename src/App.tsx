@@ -5,7 +5,9 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
-import Services from "./pages/Services";
+import PersonalData from "./pages/services/PersonalData";
+import Attestation from "./pages/services/Attestation";
+import Consulting from "./pages/services/Consulting";
 import Antivirus from "./pages/catalog/Antivirus";
 import AccessControl from "./pages/catalog/AccessControl";
 import TrustedBoot from "./pages/catalog/TrustedBoot";
@@ -30,8 +32,9 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/services/:slug" element={<Services />} />
+          <Route path="/services/personal-data" element={<PersonalData />} />
+          <Route path="/services/attestation" element={<Attestation />} />
+          <Route path="/services/consulting" element={<Consulting />} />
           <Route path="/catalog/antivirus" element={<Antivirus />} />
           <Route path="/catalog/access-control" element={<AccessControl />} />
           <Route path="/catalog/trusted-boot" element={<TrustedBoot />} />
