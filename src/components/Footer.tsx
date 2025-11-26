@@ -35,9 +35,9 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Контакты</h4>
             <ul className="space-y-2 text-sm text-blue-200">
-              <li>+7 (901) 500-00-78</li>
-              <li>+7 (901) 500-00-87</li>
-              <li>info@security-center.ru</li>
+              <li><a href="tel:+79015000078" className="hover:text-white transition-colors">+7 (901) 500-00-78</a></li>
+              <li><a href="tel:+79015000087" className="hover:text-white transition-colors">+7 (901) 500-00-87</a></li>
+              <li><a href="mailto:info@security-center.ru" className="hover:text-white transition-colors">info@security-center.ru</a></li>
               <li>115093, г. Москва,<br />пер. Партийный, д. 1</li>
             </ul>
           </div>

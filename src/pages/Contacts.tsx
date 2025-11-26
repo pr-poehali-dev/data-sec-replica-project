@@ -41,8 +41,8 @@ const Contacts = () => {
                       </CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <p className="text-lg font-semibold text-secondary">+7 (901) 500-00-78</p>
-                      <p className="text-lg font-semibold text-secondary">+7 (901) 500-00-87</p>
+                      <a href="tel:+79015000078" className="text-lg font-semibold text-secondary hover:text-primary transition-colors block">+7 (901) 500-00-78</a>
+                      <a href="tel:+79015000087" className="text-lg font-semibold text-secondary hover:text-primary transition-colors block">+7 (901) 500-00-87</a>
                       <p className="text-sm text-muted-foreground mt-1">Пн-Пт: 9:00 - 18:00</p>
                     </CardContent>
                   </Card>
@@ -57,7 +57,7 @@ const Contacts = () => {
                       </CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <p className="text-lg font-semibold text-secondary">info@security-center.ru</p>
+                      <a href="mailto:info@security-center.ru" className="text-lg font-semibold text-secondary hover:text-primary transition-colors block">info@security-center.ru</a>
                       <p className="text-sm text-muted-foreground mt-1">Ответим в течение 24 часов</p>
                     </CardContent>
                   </Card>
