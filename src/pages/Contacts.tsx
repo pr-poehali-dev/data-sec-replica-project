@@ -41,7 +41,8 @@ const Contacts = () => {
                       </CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <p className="text-lg font-semibold text-secondary">+7 (495) 123-45-67</p>
+                      <p className="text-lg font-semibold text-secondary">+7 (901) 500-00-78</p>
+                      <p className="text-lg font-semibold text-secondary">+7 (901) 500-00-87</p>
                       <p className="text-sm text-muted-foreground mt-1">Пн-Пт: 9:00 - 18:00</p>
                     </CardContent>
                   </Card>
