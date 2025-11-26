@@ -81,6 +81,37 @@ const Contacts = () => {
             </div>
           </div>
         </section>
+
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl font-bold text-secondary mb-8 text-center">Как нас найти</h2>
+              <div className="rounded-lg overflow-hidden shadow-lg border border-gray-200">
+                <iframe
+                  src="https://yandex.ru/map-widget/v1/?um=constructor%3A0c7f5e5f5f5f5f5f5f5f5f5f5f5f5f5f&amp;source=constructor"
+                  width="100%"
+                  height="400"
+                  frameBorder="0"
+                  title="Карта офиса ЧОП СБ ЗВИ"
+                  className="w-full"
+                ></iframe>
+              </div>
+              <div className="mt-6 bg-blue-50 border-l-4 border-primary p-6 rounded-r-lg">
+                <div className="flex items-start gap-3">
+                  <Icon name="Info" className="text-primary flex-shrink-0 mt-0.5" size={20} />
+                  <div>
+                    <p className="font-semibold text-secondary mb-2">Как добраться:</p>
+                    <ul className="text-sm text-gray-700 space-y-1">
+                      <li>• Метро «Серпуховская» / «Добрынинская» — 7 минут пешком</li>
+                      <li>• Метро «Павелецкая» — 10 минут пешком</li>
+                      <li>• Наземный транспорт: остановка «Партийный переулок»</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
 
       <Footer />
