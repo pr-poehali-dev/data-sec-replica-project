@@ -29,94 +29,52 @@ const Contacts = () => {
 
         <section className="py-20 bg-gray-50">
           <div className="container mx-auto px-4">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-12 max-w-6xl mx-auto">
-              <div>
-                <h2 className="text-3xl font-bold text-secondary mb-8">Наши контакты</h2>
-                <div className="space-y-6">
-                  <Card className="border-gray-200">
-                    <CardHeader>
-                      <CardTitle className="flex items-center gap-3 text-secondary">
-                        <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
-                          <Icon name="Phone" className="text-primary" size={20} />
-                        </div>
-                        Телефон
-                      </CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <a href="tel:+79015000078" className="text-lg font-semibold text-secondary hover:text-primary transition-colors block">+7 (901) 500-00-78</a>
-                      <a href="tel:+79015000087" className="text-lg font-semibold text-secondary hover:text-primary transition-colors block">+7 (901) 500-00-87</a>
-                      <p className="text-sm text-muted-foreground mt-1">Пн-Пт: 9:00 - 18:00</p>
-                    </CardContent>
-                  </Card>
-
-                  <Card className="border-gray-200">
-                    <CardHeader>
-                      <CardTitle className="flex items-center gap-3 text-secondary">
-                        <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
-                          <Icon name="Mail" className="text-primary" size={20} />
-                        </div>
-                        Email
-                      </CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <a href="mailto:info@security-center.ru" className="text-lg font-semibold text-secondary hover:text-primary transition-colors block">info@security-center.ru</a>
-                      <p className="text-sm text-muted-foreground mt-1">Ответим в течение 24 часов</p>
-                    </CardContent>
-                  </Card>
-
-                  <Card className="border-gray-200">
-                    <CardHeader>
-                      <CardTitle className="flex items-center gap-3 text-secondary">
-                        <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
-                          <Icon name="MapPin" className="text-primary" size={20} />
-                        </div>
-                        Адрес
-                      </CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <p className="text-lg font-semibold text-secondary">115093, г. Москва,<br />пер. Партийный, д. 1</p>
-                      <p className="text-sm text-muted-foreground mt-1">ЧОП "СБ ЗВИ"</p>
-                    </CardContent>
-                  </Card>
-                </div>
-              </div>
-
-              <div>
-                <h2 className="text-3xl font-bold text-secondary mb-8">Напишите нам</h2>
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl font-bold text-secondary mb-8 text-center">Наши контакты</h2>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <Card className="border-gray-200">
-                  <CardContent className="pt-6">
-                    <form className="space-y-4">
-                      <div>
-                        <label className="text-sm font-medium text-secondary block mb-2">
-                          Имя *
-                        </label>
-                        <Input placeholder="Ваше имя" />
+                  <CardHeader>
+                    <CardTitle className="flex items-center gap-3 text-secondary">
+                      <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
+                        <Icon name="Phone" className="text-primary" size={20} />
                       </div>
-                      <div>
-                        <label className="text-sm font-medium text-secondary block mb-2">
-                          Email *
-                        </label>
-                        <Input type="email" placeholder="your@email.com" />
+                      Телефон
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <a href="tel:+79015000078" className="text-lg font-semibold text-secondary hover:text-primary transition-colors block">+7 (901) 500-00-78</a>
+                    <a href="tel:+79015000087" className="text-lg font-semibold text-secondary hover:text-primary transition-colors block">+7 (901) 500-00-87</a>
+                    <p className="text-sm text-muted-foreground mt-1">Пн-Пт: 9:00 - 18:00</p>
+                  </CardContent>
+                </Card>
+
+                <Card className="border-gray-200">
+                  <CardHeader>
+                    <CardTitle className="flex items-center gap-3 text-secondary">
+                      <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
+                        <Icon name="Mail" className="text-primary" size={20} />
                       </div>
-                      <div>
-                        <label className="text-sm font-medium text-secondary block mb-2">
-                          Телефон
-                        </label>
-                        <Input placeholder="+7 (___) ___-__-__" />
+                      Email
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <a href="mailto:info@security-center.ru" className="text-lg font-semibold text-secondary hover:text-primary transition-colors block">info@security-center.ru</a>
+                    <p className="text-sm text-muted-foreground mt-1">Ответим в течение 24 часов</p>
+                  </CardContent>
+                </Card>
+
+                <Card className="border-gray-200">
+                  <CardHeader>
+                    <CardTitle className="flex items-center gap-3 text-secondary">
+                      <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
+                        <Icon name="MapPin" className="text-primary" size={20} />
                       </div>
-                      <div>
-                        <label className="text-sm font-medium text-secondary block mb-2">
-                          Сообщение *
-                        </label>
-                        <Textarea 
-                          placeholder="Опишите ваш вопрос или задачу"
-                          rows={5}
-                        />
-                      </div>
-                      <Button className="w-full bg-primary hover:bg-blue-600">
-                        Отправить сообщение
-                      </Button>
-                    </form>
+                      Адрес
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-lg font-semibold text-secondary">115093, г. Москва,<br />пер. Партийный, д. 1</p>
+                    <p className="text-sm text-muted-foreground mt-1">ЧОП "СБ ЗВИ"</p>
                   </CardContent>
                 </Card>
               </div>
