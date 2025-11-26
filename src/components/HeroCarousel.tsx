@@ -114,25 +114,24 @@ const HeroCarousel = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-secondary/40 via-secondary/20 to-blue-900/30"></div>
       </div>
 
-      <div className="relative container mx-auto px-4 h-full flex items-end pb-16 justify-center">
+      <div className="relative container mx-auto px-4 h-full flex items-end pb-12 justify-center">
         <div className="max-w-4xl text-center">
-          <div className="bg-black/20 backdrop-blur-sm rounded-3xl p-8 md:p-12 shadow-2xl border border-white/10">
-            <h1 className="text-3xl md:text-5xl font-bold mb-6 text-white leading-tight drop-shadow-2xl">
+          <div className="bg-black/20 backdrop-blur-sm rounded-2xl p-6 md:p-8 shadow-2xl border border-white/10">
+            <h1 className="text-2xl md:text-4xl font-bold mb-3 text-white leading-tight drop-shadow-2xl">
               {slide.title}
             </h1>
-            <p className="text-base md:text-xl mb-8 text-white leading-relaxed drop-shadow-lg">
+            <p className="text-sm md:text-lg mb-5 text-white leading-relaxed drop-shadow-lg">
               {slide.description}
             </p>
-            <div className="flex flex-wrap gap-4 justify-center">
+            <div className="flex flex-wrap gap-3 justify-center">
               <Link to={slide.primaryButton.link}>
-                <Button size="lg" className="bg-white text-secondary hover:bg-gray-100 shadow-lg hover:shadow-xl transition-all font-semibold">
+                <Button className="bg-white text-secondary hover:bg-gray-100 shadow-lg hover:shadow-xl transition-all font-semibold">
                   {slide.primaryButton.text}
                 </Button>
               </Link>
               {slide.secondaryButton && (
                 <Link to={slide.secondaryButton.link}>
                   <Button
-                    size="lg"
                     variant="outline"
                     className="border-2 border-white bg-transparent text-white hover:bg-white hover:text-secondary shadow-lg hover:shadow-xl transition-all font-semibold"
                   >
