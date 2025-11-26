@@ -114,7 +114,7 @@ const HeroCarousel = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-secondary/40 via-secondary/20 to-blue-900/30"></div>
       </div>
 
-      <div className="relative container mx-auto px-4 h-full flex items-center justify-center">
+      <div className="relative container mx-auto px-4 h-full flex items-end pb-16 justify-center">
         <div className="max-w-4xl text-center">
           <div className="bg-black/20 backdrop-blur-sm rounded-3xl p-8 md:p-12 shadow-2xl border border-white/10">
             <h1 className="text-3xl md:text-5xl font-bold mb-6 text-white leading-tight drop-shadow-2xl">
