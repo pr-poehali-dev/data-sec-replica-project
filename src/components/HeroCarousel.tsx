@@ -111,38 +111,36 @@ const HeroCarousel = () => {
           backgroundImage: `url(${slide.image})`,
         }}
       >
-        <div className={`absolute inset-0 ${slide.darkMode ? 'bg-black/40' : 'bg-white/70'}`}></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-secondary/90 via-secondary/70 to-transparent"></div>
       </div>
 
-      <div className="relative container mx-auto px-4 h-full flex items-center">
-        <div className="max-w-2xl">
-          <h1 className={`text-4xl md:text-5xl font-bold mb-6 ${slide.darkMode ? 'text-white' : 'text-gray-900'}`}>
-            {slide.title}
-          </h1>
-          <p className={`text-lg md:text-xl mb-8 ${slide.darkMode ? 'text-gray-100' : 'text-gray-700'}`}>
-            {slide.description}
-          </p>
-          <div className="flex flex-wrap gap-4">
-            <Link to={slide.primaryButton.link}>
-              <Button size="lg" className="bg-primary hover:bg-blue-700 text-white">
-                {slide.primaryButton.text}
-              </Button>
-            </Link>
-            {slide.secondaryButton && (
-              <Link to={slide.secondaryButton.link}>
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className={`${
-                    slide.darkMode
-                      ? 'border-2 border-white bg-transparent text-white hover:bg-white hover:text-gray-900'
-                      : 'border-2 border-gray-900 bg-transparent text-gray-900 hover:bg-gray-900 hover:text-white'
-                  }`}
-                >
-                  {slide.secondaryButton.text}
+      <div className="relative container mx-auto px-4 h-full flex items-center justify-center">
+        <div className="max-w-4xl text-center">
+          <div className="bg-white/95 backdrop-blur-sm rounded-3xl p-8 md:p-12 shadow-2xl border border-gray-200">
+            <h1 className="text-3xl md:text-5xl font-bold mb-6 text-secondary leading-tight">
+              {slide.title}
+            </h1>
+            <p className="text-base md:text-xl mb-8 text-gray-700 leading-relaxed">
+              {slide.description}
+            </p>
+            <div className="flex flex-wrap gap-4 justify-center">
+              <Link to={slide.primaryButton.link}>
+                <Button size="lg" className="bg-primary hover:bg-blue-700 text-white shadow-lg hover:shadow-xl transition-all">
+                  {slide.primaryButton.text}
                 </Button>
               </Link>
-            )}
+              {slide.secondaryButton && (
+                <Link to={slide.secondaryButton.link}>
+                  <Button
+                    size="lg"
+                    variant="outline"
+                    className="border-2 border-primary bg-transparent text-primary hover:bg-primary hover:text-white shadow-lg hover:shadow-xl transition-all"
+                  >
+                    {slide.secondaryButton.text}
+                  </Button>
+                </Link>
+              )}
+            </div>
           </div>
         </div>
       </div>
