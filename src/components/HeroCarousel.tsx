@@ -111,16 +111,16 @@ const HeroCarousel = () => {
           backgroundImage: `url(${slide.image})`,
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-secondary/80 via-secondary/50 to-blue-900/60"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-secondary/40 via-secondary/20 to-blue-900/30"></div>
       </div>
 
       <div className="relative container mx-auto px-4 h-full flex items-center justify-center">
         <div className="max-w-4xl text-center">
-          <div className="bg-white/10 backdrop-blur-md rounded-3xl p-8 md:p-12 shadow-2xl border border-white/20">
-            <h1 className="text-3xl md:text-5xl font-bold mb-6 text-white leading-tight drop-shadow-lg">
+          <div className="bg-black/20 backdrop-blur-sm rounded-3xl p-8 md:p-12 shadow-2xl border border-white/10">
+            <h1 className="text-3xl md:text-5xl font-bold mb-6 text-white leading-tight drop-shadow-2xl">
               {slide.title}
             </h1>
-            <p className="text-base md:text-xl mb-8 text-white/90 leading-relaxed drop-shadow-md">
+            <p className="text-base md:text-xl mb-8 text-white leading-relaxed drop-shadow-lg">
               {slide.description}
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
