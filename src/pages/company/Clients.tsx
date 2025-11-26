@@ -147,38 +147,38 @@ const Clients = () => {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-4 gap-6 mb-16">
-              <div className="text-center p-6 bg-gray-50 rounded-lg">
-                <div className="text-4xl font-bold text-primary mb-2">30+</div>
-                <p className="text-muted-foreground">Постоянных клиентов</p>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mb-16">
+              <div className="text-center p-4 md:p-6 bg-gray-50 rounded-lg">
+                <div className="text-2xl md:text-4xl font-bold text-primary mb-2">30+</div>
+                <p className="text-xs md:text-sm text-muted-foreground">Постоянных клиентов</p>
               </div>
-              <div className="text-center p-6 bg-gray-50 rounded-lg">
-                <div className="text-4xl font-bold text-primary mb-2">100+</div>
-                <p className="text-muted-foreground">Реализованных проектов</p>
+              <div className="text-center p-4 md:p-6 bg-gray-50 rounded-lg">
+                <div className="text-2xl md:text-4xl font-bold text-primary mb-2">100+</div>
+                <p className="text-xs md:text-sm text-muted-foreground">Реализованных проектов</p>
               </div>
-              <div className="text-center p-6 bg-gray-50 rounded-lg">
-                <div className="text-4xl font-bold text-primary mb-2">15</div>
-                <p className="text-muted-foreground">Регионов России</p>
+              <div className="text-center p-4 md:p-6 bg-gray-50 rounded-lg">
+                <div className="text-2xl md:text-4xl font-bold text-primary mb-2">15</div>
+                <p className="text-xs md:text-sm text-muted-foreground">Регионов России</p>
               </div>
-              <div className="text-center p-6 bg-gray-50 rounded-lg">
-                <div className="text-4xl font-bold text-primary mb-2">98%</div>
-                <p className="text-muted-foreground">Повторных обращений</p>
+              <div className="text-center p-4 md:p-6 bg-gray-50 rounded-lg">
+                <div className="text-2xl md:text-4xl font-bold text-primary mb-2">98%</div>
+                <p className="text-xs md:text-sm text-muted-foreground">Повторных обращений</p>
               </div>
             </div>
 
-            <h2 className="text-3xl font-bold text-secondary mb-8">Клиенты по отраслям</h2>
+            <h2 className="text-2xl md:text-3xl font-bold text-secondary mb-8">Клиенты по отраслям</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
               {sectors.map((sector, index) => (
                 <Card key={index} className="border-gray-200 hover:shadow-lg transition-shadow">
                   <CardHeader>
-                    <div className="flex items-center justify-between mb-4">
+                    <div className="space-y-3">
                       <div className="flex items-center gap-3">
-                        <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                          <Icon name={sector.icon as any} className="text-primary" size={24} />
+                        <div className="w-10 h-10 md:w-12 md:h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                          <Icon name={sector.icon as any} className="text-primary" size={20} />
                         </div>
-                        <CardTitle className="text-xl text-secondary">{sector.name}</CardTitle>
+                        <CardTitle className="text-base md:text-xl text-secondary">{sector.name}</CardTitle>
                       </div>
-                      <Badge variant="secondary">{sector.count} клиентов</Badge>
+                      <Badge variant="secondary" className="text-xs">{sector.count} клиентов</Badge>
                     </div>
                   </CardHeader>
                   <CardContent>
@@ -195,42 +195,40 @@ const Clients = () => {
               ))}
             </div>
 
-            <h2 className="text-3xl font-bold text-secondary mb-8">Кейсы наших проектов</h2>
+            <h2 className="text-2xl md:text-3xl font-bold text-secondary mb-8">Кейсы наших проектов</h2>
             <div className="space-y-6">
               {caseStudies.map((study, index) => (
                 <Card key={index} className="border-gray-200 hover:shadow-lg transition-shadow">
                   <CardHeader>
-                    <div className="flex items-start gap-4">
-                      <div className="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                        <Icon name={study.icon as any} className="text-primary" size={28} />
+                    <div className="flex items-start gap-3">
+                      <div className="w-12 h-12 md:w-14 md:h-14 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <Icon name={study.icon as any} className="text-primary" size={24} />
                       </div>
-                      <div className="flex-grow">
-                        <div className="flex items-start justify-between gap-4 mb-2">
-                          <CardTitle className="text-xl text-secondary">{study.client}</CardTitle>
-                          <Badge variant="outline">{study.industry}</Badge>
-                        </div>
-                        <p className="text-muted-foreground text-sm mb-4">{study.task}</p>
+                      <div className="flex-grow min-w-0">
+                        <CardTitle className="text-base md:text-xl text-secondary mb-2">{study.client}</CardTitle>
+                        <Badge variant="outline" className="text-xs mb-3">{study.industry}</Badge>
+                        <p className="text-muted-foreground text-xs md:text-sm">{study.task}</p>
                       </div>
                     </div>
                   </CardHeader>
                   <CardContent>
-                    <div className="space-y-4">
+                    <div className="space-y-3 md:space-y-4">
                       <div>
-                        <h4 className="font-semibold text-secondary mb-2">Решение:</h4>
-                        <p className="text-gray-700 text-sm">{study.solution}</p>
+                        <h4 className="font-semibold text-secondary text-sm md:text-base mb-2">Решение:</h4>
+                        <p className="text-gray-700 text-xs md:text-sm">{study.solution}</p>
                       </div>
                       <div>
-                        <h4 className="font-semibold text-secondary mb-2">Результат:</h4>
-                        <p className="text-gray-700 text-sm">{study.result}</p>
+                        <h4 className="font-semibold text-secondary text-sm md:text-base mb-2">Результат:</h4>
+                        <p className="text-gray-700 text-xs md:text-sm">{study.result}</p>
                       </div>
-                      <div className="flex flex-wrap gap-6 pt-4 border-t border-gray-200">
+                      <div className="flex flex-col sm:flex-row gap-3 sm:gap-6 pt-3 border-t border-gray-200">
                         <div className="flex items-center gap-2">
-                          <Icon name="Clock" className="text-muted-foreground" size={16} />
-                          <span className="text-sm text-gray-700">{study.duration}</span>
+                          <Icon name="Clock" className="text-muted-foreground" size={14} />
+                          <span className="text-xs md:text-sm text-gray-700">{study.duration}</span>
                         </div>
                         <div className="flex items-center gap-2">
-                          <Icon name="Users" className="text-muted-foreground" size={16} />
-                          <span className="text-sm text-gray-700">{study.team}</span>
+                          <Icon name="Users" className="text-muted-foreground" size={14} />
+                          <span className="text-xs md:text-sm text-gray-700">{study.team}</span>
                         </div>
                       </div>
                     </div>
