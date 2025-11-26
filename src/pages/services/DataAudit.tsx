@@ -175,7 +175,7 @@ const DataAudit = () => {
                 <div className="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center">
                   <Icon name="ClipboardCheck" className="text-white" size={24} />
                 </div>
-                <h1 className="text-2xl md:text-4xl font-bold"Аудит персональных данных</h1>
+                <h1 className="text-2xl md:text-4xl font-bold">Аудит персональных данных</h1>
               </div>
               <p className="text-xl text-blue-100 mb-8">
                 Выдача официальных документов, подтверждающих соответствие обработки персональных данных требованиям Федерального закона № 152-ФЗ и других нормативных актов

@@ -154,7 +154,7 @@ const Clients = () => {
                 <div className="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center">
                   <Icon name="Users" className="text-white" size={24} />
                 </div>
-                <h1 className="text-2xl md:text-4xl font-bold"Наши клиенты</h1>
+                <h1 className="text-2xl md:text-4xl font-bold">Наши клиенты</h1>
               </div>
               <p className="text-xl text-blue-100">
                 Более 250 компаний и организаций доверяют нам защиту своей информации

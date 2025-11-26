@@ -183,7 +183,7 @@ const CriticalInfrastructure = () => {
                 <div className="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center">
                   <Icon name="Server" className="text-white" size={24} />
                 </div>
-                <h1 className="text-2xl md:text-4xl font-bold"Критическая информационная инфраструктура (КИИ)</h1>
+                <h1 className="text-2xl md:text-4xl font-bold">Критическая информационная инфраструктура (КИИ)</h1>
               </div>
               <p className="text-xl text-gray-300 mb-8">
                 Услуги по обеспечению безопасности объектов критической информационной инфраструктуры Российской Федерации в соответствии с требованиями Федерального закона №187-ФЗ

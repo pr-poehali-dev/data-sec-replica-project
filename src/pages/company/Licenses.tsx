@@ -33,7 +33,7 @@ const Licenses = () => {
                 <div className="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center">
                   <Icon name="Award" className="text-white" size={24} />
                 </div>
-                <h1 className="text-2xl md:text-4xl font-bold"Лицензии и сертификаты</h1>
+                <h1 className="text-2xl md:text-4xl font-bold">Лицензии и сертификаты</h1>
               </div>
               <p className="text-xl text-blue-100">
                 Официальные разрешительные документы и подтверждения компетенций

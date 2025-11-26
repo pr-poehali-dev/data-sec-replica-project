@@ -87,7 +87,7 @@ const Articles = () => {
                 <div className="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center">
                   <Icon name="FileText" className="text-white" size={24} />
                 </div>
-                <h1 className="text-2xl md:text-4xl font-bold"Статьи и публикации</h1>
+                <h1 className="text-2xl md:text-4xl font-bold">Статьи и публикации</h1>
               </div>
               <p className="text-xl text-blue-100">
                 Экспертные материалы по различным аспектам информационной безопасности

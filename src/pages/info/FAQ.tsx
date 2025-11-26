@@ -95,7 +95,7 @@ const FAQ = () => {
                 <div className="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center">
                   <Icon name="MessageCircle" className="text-white" size={24} />
                 </div>
-                <h1 className="text-2xl md:text-4xl font-bold"Вопросы и ответы</h1>
+                <h1 className="text-2xl md:text-4xl font-bold">Вопросы и ответы</h1>
               </div>
               <p className="text-xl text-blue-100">
                 Ответы на частые вопросы по информационной безопасности от наших экспертов

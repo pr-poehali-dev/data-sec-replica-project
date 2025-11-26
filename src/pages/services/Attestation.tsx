@@ -123,7 +123,7 @@ const Attestation = () => {
                 <div className="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center">
                   <Icon name="Award" className="text-white" size={24} />
                 </div>
-                <h1 className="text-2xl md:text-4xl font-bold"Аттестация объектов информатизации</h1>
+                <h1 className="text-2xl md:text-4xl font-bold">Аттестация объектов информатизации</h1>
               </div>
               <p className="text-xl text-blue-100 mb-6">
                 Комплексная оценка защищенности информационных систем и получение аттестата соответствия

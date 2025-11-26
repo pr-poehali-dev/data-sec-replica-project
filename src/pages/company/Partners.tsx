@@ -136,7 +136,7 @@ const Partners = () => {
                 <div className="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center">
                   <Icon name="Handshake" className="text-white" size={24} />
                 </div>
-                <h1 className="text-2xl md:text-4xl font-bold"Наши партнеры</h1>
+                <h1 className="text-2xl md:text-4xl font-bold">Наши партнеры</h1>
               </div>
               <p className="text-xl text-blue-100">
                 Сотрудничество с ведущими производителями и интеграторами решений ИБ
