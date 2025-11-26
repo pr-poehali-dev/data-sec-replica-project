@@ -4,8 +4,10 @@ import Icon from '@/components/ui/icon';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
+import { useSEO, SEO_CONFIGS } from '@/utils/seo';
 
 const Careers = () => {
+  useSEO(SEO_CONFIGS.company.about);
   const vacancies = [
     {
       title: 'Специалист по аттестации объектов информатизации',

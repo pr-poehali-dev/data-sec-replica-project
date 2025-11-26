@@ -5,8 +5,11 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/
 import Icon from '@/components/ui/icon';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import { useSEO, SEO_CONFIGS } from '@/utils/seo';
 
 const Index = () => {
+  // Apply SEO configuration for home page
+  useSEO(SEO_CONFIGS.home);
 
   const services = [
     {

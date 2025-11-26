@@ -1,8 +1,10 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Icon from '@/components/ui/icon';
+import { useSEO, SEO_CONFIGS } from '@/utils/seo';
 
 const History = () => {
+  useSEO(SEO_CONFIGS.company.about);
   const timeline = [
     {
       year: '2009',

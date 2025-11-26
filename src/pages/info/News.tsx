@@ -2,8 +2,10 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Icon from '@/components/ui/icon';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { useSEO, SEO_CONFIGS } from '@/utils/seo';
 
 const News = () => {
+  useSEO(SEO_CONFIGS.info.news);
   const news = [
     {
       date: '20 ноября 2024',

@@ -3,8 +3,10 @@ import Footer from '@/components/Footer';
 import Icon from '@/components/ui/icon';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
+import { useSEO, SEO_CONFIGS } from '@/utils/seo';
 
 const AccessControl = () => {
+  useSEO(SEO_CONFIGS.catalog.accessControl);
   const solutions = [
     {
       name: 'Secret Net Studio',

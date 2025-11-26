@@ -2,8 +2,10 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Icon from '@/components/ui/icon';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { useSEO, SEO_CONFIGS } from '@/utils/seo';
 
 const Legislation = () => {
+  useSEO(SEO_CONFIGS.info.legislation);
   const federalLaws = [
     {
       number: '152-ФЗ',

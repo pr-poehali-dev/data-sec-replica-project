@@ -3,8 +3,10 @@ import Footer from '@/components/Footer';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import Icon from '@/components/ui/icon';
 import { Link } from 'react-router-dom';
+import { useSEO, SEO_CONFIGS } from '@/utils/seo';
 
 const Company = () => {
+  useSEO(SEO_CONFIGS.company.about);
   const sections = [
     {
       icon: 'Building',

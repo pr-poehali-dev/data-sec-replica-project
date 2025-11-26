@@ -2,8 +2,10 @@ import { useState } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Icon from '@/components/ui/icon';
+import { useSEO, SEO_CONFIGS } from '@/utils/seo';
 
 const FAQ = () => {
+  useSEO(SEO_CONFIGS.info.faq);
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   const faqData = [

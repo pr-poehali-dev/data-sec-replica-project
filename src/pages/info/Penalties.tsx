@@ -1,8 +1,10 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Icon from '@/components/ui/icon';
+import { useSEO, SEO_CONFIGS } from '@/utils/seo';
 
 const Penalties = () => {
+  useSEO(SEO_CONFIGS.info.penalties);
   return (
     <div className="min-h-screen bg-white flex flex-col">
       <Header />

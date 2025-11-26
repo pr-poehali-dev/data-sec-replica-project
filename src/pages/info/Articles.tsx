@@ -2,8 +2,10 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Icon from '@/components/ui/icon';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { useSEO, SEO_CONFIGS } from '@/utils/seo';
 
 const Articles = () => {
+  useSEO(SEO_CONFIGS.info.articles);
   const articles = [
     {
       category: 'Технологии',

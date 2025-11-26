@@ -2,8 +2,11 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Icon from '@/components/ui/icon';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { useSEO, SEO_CONFIGS } from '@/utils/seo';
 
 const Attestation = () => {
+  // Apply SEO configuration for Attestation service page
+  useSEO(SEO_CONFIGS.services.attestation);
   const objectTypes = [
     {
       icon: 'Database',

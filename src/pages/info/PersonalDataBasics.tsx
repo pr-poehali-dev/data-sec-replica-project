@@ -1,8 +1,10 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Icon from '@/components/ui/icon';
+import { useSEO, SEO_CONFIGS } from '@/utils/seo';
 
 const PersonalDataBasics = () => {
+  useSEO(SEO_CONFIGS.info.personalDataBasics);
   return (
     <div className="min-h-screen bg-white flex flex-col">
       <Header />
