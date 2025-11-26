@@ -81,7 +81,7 @@ const Header = () => {
             </div>
             <div>
               <h1 className="text-xl font-bold text-secondary">ЧОП "СБ ЗВИ"</h1>
-              <p className="text-xs text-muted-foreground">Частная охранная организация</p>
+              <p className="text-xs text-muted-foreground">Защита информации</p>
             </div>
           </Link>
 

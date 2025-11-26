@@ -13,7 +13,7 @@ const Footer = () => {
               </div>
               <h3 className="font-bold">ЧОП "СБ ЗВИ"</h3>
             </div>
-            <p className="text-sm text-blue-200 mb-3">Частная охранная организация</p>
+            <p className="text-sm text-blue-200 mb-3">Защита информации</p>
             <p className="text-xs text-blue-200">115093, г. Москва,<br />пер. Партийный, д. 1</p>
           </div>
           <div>
