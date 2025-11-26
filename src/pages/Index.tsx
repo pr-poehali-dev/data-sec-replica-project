@@ -290,11 +290,6 @@ const Index = () => {
                 </CardContent>
               </Card>
             </div>
-            <div className="mt-8 text-center">
-              <Button size="lg" className="bg-primary hover:bg-blue-600">
-                Задать вопрос
-              </Button>
-            </div>
           </div>
         </div>
       </section>
