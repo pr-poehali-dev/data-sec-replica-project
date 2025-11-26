@@ -65,7 +65,7 @@ const slides: Slide[] = [
     id: 4,
     title: 'Обеспечение безопасности объектов КИИ',
     description: 'Услуги по категорированию и обеспечению безопасности объектов критической информационной инфраструктуры в соответствии с требованиями Федерального закона №187-ФЗ',
-    image: 'https://cdn.poehali.dev/projects/d2c8f28a-afc1-4869-912c-685feedfe6a4/files/045efd71-acd4-41db-aa3b-b9d3a76687c3.jpg',
+    image: 'https://cdn.poehali.dev/files/8b5e5198-bee8-4381-b7fa-4578e4336ccf.png',
     primaryButton: {
       text: 'Подробнее',
       link: '/services/attestation',
