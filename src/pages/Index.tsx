@@ -5,6 +5,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/
 import Icon from '@/components/ui/icon';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import HeroCarousel from '@/components/HeroCarousel';
 import { useSEO, SEO_CONFIGS } from '@/utils/seo';
 
 const Index = () => {
@@ -104,31 +105,7 @@ const Index = () => {
       <Header />
       
       <main className="flex-grow">
-
-      <section className="bg-gradient-to-br from-secondary via-secondary to-blue-900 text-white py-20">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl">
-            <h2 className="text-5xl font-bold mb-6 animate-fade-in">
-              Комплексная защита вашей информационной инфраструктуры
-            </h2>
-            <p className="text-xl mb-8 text-blue-100 animate-fade-in">
-              Профессиональные услуги по аттестации, аудиту и внедрению средств защиты информации для бизнеса и государственных организаций
-            </p>
-            <div className="flex flex-wrap gap-4 animate-fade-in">
-              <Link to="/contacts">
-                <Button size="lg" className="bg-primary hover:bg-blue-600 text-white">
-                  Заказать консультацию
-                </Button>
-              </Link>
-              <Link to="/services">
-                <Button size="lg" variant="outline" className="border-2 border-white bg-transparent text-white hover:bg-white hover:text-secondary">
-                  Наши услуги
-                </Button>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+        <HeroCarousel />
 
       <section id="services" className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
