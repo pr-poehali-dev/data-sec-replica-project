@@ -72,12 +72,8 @@ const Licenses = () => {
                     <img 
                       src={license.image} 
                       alt={license.title}
-                      className="w-full rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-shadow cursor-pointer"
-                      onClick={() => window.open(license.image, '_blank')}
+                      className="w-full rounded-lg border border-gray-200 shadow-sm"
                     />
-                    <p className="text-sm text-muted-foreground text-center mt-3">
-                      Нажмите на изображение для увеличения
-                    </p>
                   </CardContent>
                 </Card>
               ))}
