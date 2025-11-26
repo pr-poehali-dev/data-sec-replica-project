@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 interface Slide {
   id: number;
@@ -84,13 +85,21 @@ const HeroCarousel = () => {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 5000);
+    }, 8000);
 
     return () => clearInterval(timer);
   }, []);
 
   const goToSlide = (index: number) => {
     setCurrentSlide(index);
+  };
+
+  const goToPrevSlide = () => {
+    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
+  };
+
+  const goToNextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % slides.length);
   };
 
   const slide = slides[currentSlide];
@@ -138,6 +147,22 @@ const HeroCarousel = () => {
           </div>
         </div>
       </div>
+
+      <button
+        onClick={goToPrevSlide}
+        className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/80 hover:bg-white flex items-center justify-center transition-colors z-10"
+        aria-label="Предыдущий слайд"
+      >
+        <ChevronLeft size={24} className="text-gray-900" />
+      </button>
+
+      <button
+        onClick={goToNextSlide}
+        className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/80 hover:bg-white flex items-center justify-center transition-colors z-10"
+        aria-label="Следующий слайд"
+      >
+        <ChevronRight size={24} className="text-gray-900" />
+      </button>
 
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-2 z-10">
         {slides.map((_, index) => (
