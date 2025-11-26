@@ -27,7 +27,7 @@ const slides: Slide[] = [
     image: 'https://cdn.poehali.dev/files/1c88f054-68f6-49d0-8605-4adca4e038b0.png',
     primaryButton: {
       text: 'Подробнее',
-      link: '/services/personal-data',
+      link: '/services/document-development',
     },
     secondaryButton: {
       text: 'Задать вопрос',
