@@ -98,7 +98,7 @@ const Licenses = () => {
                   <Icon name="Mail" size={20} />
                   Отправить запрос
                 </a>
-                <a href="tel:+74951234567" className="inline-flex items-center gap-2 bg-white hover:bg-gray-50 text-secondary border border-gray-300 px-6 py-3 rounded-lg font-medium transition-colors">
+                <a href="tel:+79015000078" className="inline-flex items-center gap-2 bg-white hover:bg-gray-50 text-secondary border border-gray-300 px-6 py-3 rounded-lg font-medium transition-colors">
                   <Icon name="Phone" size={20} />
                   Позвонить нам
                 </a>
