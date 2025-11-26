@@ -110,7 +110,29 @@ const Index = () => {
         { label: 'Консалтинг и обучение', href: '#' }
       ]
     },
-    { label: 'Каталог СЗИ', href: '#', dropdown: null },
+    { 
+      label: 'Каталог СЗИ', 
+      href: '#', 
+      dropdown: 'extended',
+      dropdownData: [
+        {
+          title: 'Защита серверов и рабочих станций',
+          icon: 'Monitor',
+          items: [
+            { label: 'Антивирусная защита', href: '#' },
+            { label: 'Защита информации от НСД', href: '#' },
+            { label: 'Средства доверенной загрузки', href: '#' }
+          ]
+        },
+        {
+          title: 'Сетевая безопасность',
+          icon: 'Network',
+          items: [
+            { label: 'Межсетевое экранирование', href: '#' }
+          ]
+        }
+      ]
+    },
     {
       label: 'Информация',
       href: '#',
@@ -157,19 +179,49 @@ const Index = () => {
                   </a>
                   
                   {item.dropdown && openDropdown === item.label && (
-                    <div className="absolute top-full left-0 mt-0 bg-white border border-gray-200 rounded-lg shadow-lg min-w-[280px] animate-slide-down">
-                      <div className="py-2">
-                        {item.dropdown.map((subItem, subIndex) => (
-                          <a
-                            key={subIndex}
-                            href={subItem.href}
-                            className="block px-4 py-2 text-sm text-secondary hover:bg-blue-50 hover:text-primary transition-colors"
-                          >
-                            {subItem.label}
-                          </a>
-                        ))}
-                      </div>
-                    </div>
+                    <>
+                      {item.dropdown === 'extended' ? (
+                        <div className="absolute top-full left-0 mt-0 bg-white border border-gray-200 rounded-lg shadow-lg min-w-[600px] animate-slide-down">
+                          <div className="p-6 grid grid-cols-2 gap-6">
+                            {item.dropdownData?.map((section: any, sectionIndex: number) => (
+                              <div key={sectionIndex}>
+                                <div className="flex items-center gap-3 mb-4">
+                                  <div className="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center">
+                                    <Icon name={section.icon} className="text-primary" size={24} />
+                                  </div>
+                                  <h3 className="font-semibold text-secondary">{section.title}</h3>
+                                </div>
+                                <div className="space-y-2 ml-2">
+                                  {section.items.map((subItem: any, subIndex: number) => (
+                                    <a
+                                      key={subIndex}
+                                      href={subItem.href}
+                                      className="block px-3 py-1.5 text-sm text-primary hover:text-blue-600 transition-colors"
+                                    >
+                                      {subItem.label}
+                                    </a>
+                                  ))}
+                                </div>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      ) : (
+                        <div className="absolute top-full left-0 mt-0 bg-white border border-gray-200 rounded-lg shadow-lg min-w-[280px] animate-slide-down">
+                          <div className="py-2">
+                            {Array.isArray(item.dropdown) && item.dropdown.map((subItem: any, subIndex: number) => (
+                              <a
+                                key={subIndex}
+                                href={subItem.href}
+                                className="block px-4 py-2 text-sm text-secondary hover:bg-blue-50 hover:text-primary transition-colors"
+                              >
+                                {subItem.label}
+                              </a>
+                            ))}
+                          </div>
+                        </div>
+                      )}
+                    </>
                   )}
                 </div>
               ))}
