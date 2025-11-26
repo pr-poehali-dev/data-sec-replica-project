@@ -5,6 +5,7 @@ import Icon from '@/components/ui/icon';
 const Header = () => {
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [mobileOpenDropdown, setMobileOpenDropdown] = useState<string | null>(null);
 
   const menuItems = [
     {
@@ -164,27 +165,74 @@ const Header = () => {
         </div>
 
         {mobileMenuOpen && (
-          <div className="lg:hidden py-4 border-t border-gray-200 animate-fade-in">
+          <div className="lg:hidden py-4 border-t border-gray-200 animate-fade-in max-h-[70vh] overflow-y-auto">
             {menuItems.map((item, index) => (
-              <div key={index}>
-                <Link
-                  to={item.href}
-                  className="block py-2 text-sm font-medium text-secondary hover:text-primary"
-                >
-                  {item.label}
-                </Link>
-                {item.dropdown && item.dropdown !== 'extended' && (
-                  <div className="pl-4">
-                    {Array.isArray(item.dropdown) && item.dropdown.map((subItem: any, subIndex: number) => (
-                      <Link
-                        key={subIndex}
-                        to={subItem.href}
-                        className="block py-1.5 text-xs text-muted-foreground hover:text-primary"
-                      >
-                        {subItem.label}
-                      </Link>
-                    ))}
+              <div key={index} className="border-b border-gray-100 last:border-b-0">
+                {item.dropdown ? (
+                  <div>
+                    <button
+                      onClick={() => setMobileOpenDropdown(mobileOpenDropdown === item.label ? null : item.label)}
+                      className="w-full flex items-center justify-between py-3 px-4 text-sm font-medium text-secondary hover:bg-gray-50"
+                    >
+                      <span>{item.label}</span>
+                      <Icon 
+                        name="ChevronDown" 
+                        size={16} 
+                        className={`transition-transform ${mobileOpenDropdown === item.label ? 'rotate-180' : ''}`} 
+                      />
+                    </button>
+                    {mobileOpenDropdown === item.label && (
+                      <div className="bg-gray-50 pb-2">
+                        {item.dropdown === 'extended' ? (
+                          <div className="px-4 py-2 space-y-4">
+                            {item.dropdownData?.map((section: any, sectionIndex: number) => (
+                              <div key={sectionIndex}>
+                                <div className="flex items-center gap-2 mb-2 px-2">
+                                  <div className="w-8 h-8 bg-blue-50 rounded-lg flex items-center justify-center">
+                                    <Icon name={section.icon} className="text-primary" size={16} />
+                                  </div>
+                                  <h4 className="text-xs font-semibold text-secondary">{section.title}</h4>
+                                </div>
+                                <div className="space-y-1">
+                                  {section.items.map((subItem: any, subIndex: number) => (
+                                    <Link
+                                      key={subIndex}
+                                      to={subItem.href}
+                                      className="block py-2 px-4 text-xs text-primary hover:bg-white rounded"
+                                      onClick={() => setMobileMenuOpen(false)}
+                                    >
+                                      {subItem.label}
+                                    </Link>
+                                  ))}
+                                </div>
+                              </div>
+                            ))}
+                          </div>
+                        ) : (
+                          <div className="py-1">
+                            {Array.isArray(item.dropdown) && item.dropdown.map((subItem: any, subIndex: number) => (
+                              <Link
+                                key={subIndex}
+                                to={subItem.href}
+                                className="block py-2 px-6 text-xs text-muted-foreground hover:bg-white hover:text-primary"
+                                onClick={() => setMobileMenuOpen(false)}
+                              >
+                                {subItem.label}
+                              </Link>
+                            ))}
+                          </div>
+                        )}
+                      </div>
+                    )}
                   </div>
+                ) : (
+                  <Link
+                    to={item.href}
+                    className="block py-3 px-4 text-sm font-medium text-secondary hover:bg-gray-50"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    {item.label}
+                  </Link>
                 )}
               </div>
             ))}
