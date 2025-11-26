@@ -1,14 +1,31 @@
-User-agent: Googlebot
+User-agent: *
 Allow: /
 
+# Yandex
+User-agent: Yandex
+Allow: /
+Crawl-delay: 1
+
+# Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+# Bing
 User-agent: Bingbot
 Allow: /
 
+# Social
 User-agent: Twitterbot
 Allow: /
 
 User-agent: facebookexternalhit
 Allow: /
 
-User-agent: *
-Allow: /
+# Sitemap
+Sitemap: https://xn--80aaeib5aai5bc5eh.xn--p1ai/sitemap.xml
+
+# Disallow internal paths
+Disallow: /admin/
+Disallow: /_internal/
+Disallow: /api/
