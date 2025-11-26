@@ -11,100 +11,75 @@ const Clients = () => {
     {
       name: 'Банки и финансы',
       icon: 'Building',
-      count: 45,
+      count: 5,
       clients: [
         'ПАО "Сбербанк"',
-        'АО "Альфа-Банк"',
-        'ПАО "ВТБ"',
-        'АО "Тинькофф Банк"',
-        'ПАО "Промсвязьбанк"',
-        'АО "Райффайзенбанк"'
+        'АО "Альфа-Банк"'
       ]
     },
     {
       name: 'Государственный сектор',
       icon: 'Landmark',
-      count: 38,
+      count: 4,
       clients: [
         'Министерство промышленности и торговли РФ',
-        'Правительство Московской области',
-        'ФНС России',
-        'Пенсионный фонд РФ',
-        'Росреестр',
-        'Министерство здравоохранения РФ'
+        'Правительство Московской области'
       ]
     },
     {
       name: 'Промышленность',
       icon: 'Factory',
-      count: 52,
+      count: 5,
       clients: [
         'АО "Газпром нефть"',
         'ПАО "ЛУКОЙЛ"',
-        'ПАО "Северсталь"',
-        'ГК "Росатом"',
-        'АО "СУЭК"',
-        'ПАО "Татнефть"'
+        'ПАО "Северсталь"'
       ]
     },
     {
       name: 'Энергетика',
       icon: 'Zap',
-      count: 28,
+      count: 3,
       clients: [
         'ПАО "Россети"',
-        'АО "Мосэнерго"',
-        'ПАО "ФСК ЕЭС"',
-        'ПАО "Интер РАО"',
-        'ПАО "РусГидро"'
+        'АО "Мосэнерго"'
       ]
     },
     {
       name: 'Телекоммуникации',
       icon: 'Wifi',
-      count: 22,
+      count: 3,
       clients: [
         'ПАО "Ростелеком"',
-        'ПАО "МегаФон"',
-        'ПАО "МТС"',
-        'ПАО "ВымпелКом"',
-        'АО "ЭР-Телеком"'
+        'ПАО "МегаФон"'
       ]
     },
     {
       name: 'Транспорт и логистика',
       icon: 'Truck',
-      count: 31,
+      count: 4,
       clients: [
         'АО "РЖД"',
         'ФГУП "Почта России"',
-        'ПАО "Аэрофлот"',
-        'АО "ГТЛК"',
-        'ГК "Автодор"'
+        'ПАО "Аэрофлот"'
       ]
     },
     {
       name: 'Ритейл',
       icon: 'ShoppingCart',
-      count: 19,
+      count: 2,
       clients: [
         'X5 Retail Group',
-        'ПАО "Магнит"',
-        'ООО "Лента"',
-        'ООО "Метро Кэш энд Керри"',
-        'АО "Дикси Групп"'
+        'ПАО "Магнит"'
       ]
     },
     {
       name: 'Медицина и фармацевтика',
       icon: 'Heart',
-      count: 24,
+      count: 3,
       clients: [
         'ФГБУ "НМИЦ онкологии"',
-        'ГК "Медси"',
-        'АО "Фармстандарт"',
-        'ГК "Мать и дитя"',
-        'Сеть клиник "СМ-Клиника"'
+        'ГК "Медси"'
       ]
     }
   ];
@@ -157,7 +132,7 @@ const Clients = () => {
                 <h1 className="text-2xl md:text-4xl font-bold">Наши клиенты</h1>
               </div>
               <p className="text-xl text-blue-100">
-                Более 250 компаний и организаций доверяют нам защиту своей информации
+                Более 30 компаний и организаций доверяют нам защиту своей информации
               </p>
             </div>
           </div>
@@ -168,21 +143,21 @@ const Clients = () => {
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold text-secondary mb-4">География проектов</h2>
               <p className="text-gray-700 max-w-3xl mx-auto">
-                За 15 лет работы мы реализовали более 500 проектов в различных отраслях экономики. Среди наших клиентов — крупнейшие российские компании, государственные структуры и организации малого и среднего бизнеса.
+                За 15 лет работы мы реализовали более 100 проектов в различных отраслях экономики. Среди наших клиентов — крупнейшие российские компании, государственные структуры и организации малого и среднего бизнеса.
               </p>
             </div>
 
             <div className="grid md:grid-cols-4 gap-6 mb-16">
               <div className="text-center p-6 bg-gray-50 rounded-lg">
-                <div className="text-4xl font-bold text-primary mb-2">250+</div>
+                <div className="text-4xl font-bold text-primary mb-2">30+</div>
                 <p className="text-muted-foreground">Постоянных клиентов</p>
               </div>
               <div className="text-center p-6 bg-gray-50 rounded-lg">
-                <div className="text-4xl font-bold text-primary mb-2">500+</div>
+                <div className="text-4xl font-bold text-primary mb-2">100+</div>
                 <p className="text-muted-foreground">Реализованных проектов</p>
               </div>
               <div className="text-center p-6 bg-gray-50 rounded-lg">
-                <div className="text-4xl font-bold text-primary mb-2">35</div>
+                <div className="text-4xl font-bold text-primary mb-2">15</div>
                 <p className="text-muted-foreground">Регионов России</p>
               </div>
               <div className="text-center p-6 bg-gray-50 rounded-lg">
