@@ -9,6 +9,7 @@ import Index from "./pages/Index";
 import PersonalData from "./pages/services/PersonalData";
 import DocumentDevelopment from "./pages/services/DocumentDevelopment";
 import InspectionPreparation from "./pages/services/InspectionPreparation";
+import DataAudit from "./pages/services/DataAudit";
 import Attestation from "./pages/services/Attestation";
 import Consulting from "./pages/services/Consulting";
 import Antivirus from "./pages/catalog/Antivirus";
@@ -45,6 +46,7 @@ const App = () => (
           <Route path="/services/personal-data" element={<PersonalData />} />
           <Route path="/services/document-development" element={<DocumentDevelopment />} />
           <Route path="/services/inspection-preparation" element={<InspectionPreparation />} />
+          <Route path="/services/data-audit" element={<DataAudit />} />
           <Route path="/services/attestation" element={<Attestation />} />
           <Route path="/services/consulting" element={<Consulting />} />
           <Route path="/catalog/antivirus" element={<Antivirus />} />
