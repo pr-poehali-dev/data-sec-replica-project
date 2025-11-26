@@ -75,7 +75,6 @@ const slides: Slide[] = [
       text: 'Проконсультироваться',
       link: '/contacts',
     },
-    darkMode: true,
   },
 ];
 
