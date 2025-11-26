@@ -107,23 +107,31 @@ const Index = () => {
       <main className="flex-grow">
         <HeroCarousel />
 
-      <section id="services" className="py-20 bg-gray-50">
+      <section id="services" className="py-24 bg-gradient-to-b from-white to-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-2xl md:text-4xl font-bold text-center mb-4 text-secondary">Наши услуги</h2>
-          <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-            Полный спектр решений для обеспечения информационной безопасности вашей организации
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="text-center mb-16">
+            <span className="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-semibold mb-4">
+              Наши услуги
+            </span>
+            <h2 className="text-3xl md:text-5xl font-bold mb-4 text-secondary">
+              Комплексная защита<br />вашего бизнеса
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Полный спектр решений для обеспечения информационной безопасности вашей организации
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service) => (
-              <Card key={service.id} className="hover:shadow-lg transition-shadow border-gray-200">
+              <Card key={service.id} className="group hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border-gray-200 bg-white relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full -mr-16 -mt-16 group-hover:scale-150 transition-transform duration-500"></div>
                 <CardHeader>
-                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                    <Icon name={service.icon as any} className="text-primary" size={24} />
+                  <div className="w-16 h-16 bg-gradient-to-br from-primary to-blue-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <Icon name={service.icon as any} className="text-white" size={28} />
                   </div>
-                  <CardTitle className="text-xl text-secondary">{service.title}</CardTitle>
+                  <CardTitle className="text-xl text-secondary group-hover:text-primary transition-colors">{service.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription className="text-base">{service.description}</CardDescription>
+                  <CardDescription className="text-base leading-relaxed">{service.description}</CardDescription>
                 </CardContent>
               </Card>
             ))}
@@ -131,23 +139,34 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="projects" className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <h2 className="text-2xl md:text-4xl font-bold text-center mb-4 text-secondary">Реализованные проекты</h2>
-          <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-            Успешный опыт работы с крупнейшими компаниями и государственными структурами
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {projects.map((project) => (
-              <Card key={project.id} className="border-gray-200">
+      <section id="projects" className="py-24 bg-white relative overflow-hidden">
+        <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="text-center mb-16">
+            <span className="inline-block px-4 py-2 bg-green-100 text-green-700 rounded-full text-sm font-semibold mb-4">
+              Кейсы
+            </span>
+            <h2 className="text-3xl md:text-5xl font-bold mb-4 text-secondary">Реализованные проекты</h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Успешный опыт работы с крупнейшими компаниями и государственными структурами
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {projects.map((project, index) => (
+              <Card key={project.id} className="border-2 border-gray-100 hover:border-primary transition-all duration-300 bg-gradient-to-br from-white to-gray-50">
                 <CardHeader>
-                  <CardTitle className="text-lg text-secondary">{project.title}</CardTitle>
-                  <CardDescription>{project.description}</CardDescription>
+                  <div className="flex items-start justify-between mb-4">
+                    <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
+                      <span className="text-2xl font-bold text-primary">{index + 1}</span>
+                    </div>
+                  </div>
+                  <CardTitle className="text-xl text-secondary mb-2">{project.title}</CardTitle>
+                  <CardDescription className="text-base">{project.description}</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <div className="flex items-start gap-2">
-                    <Icon name="CheckCircle" className="text-green-500 flex-shrink-0 mt-0.5" size={20} />
-                    <p className="text-sm font-medium text-secondary">{project.result}</p>
+                  <div className="flex items-start gap-3 bg-green-50 p-4 rounded-lg border border-green-100">
+                    <Icon name="CheckCircle" className="text-green-600 flex-shrink-0 mt-0.5" size={20} />
+                    <p className="text-sm font-medium text-green-900">{project.result}</p>
                   </div>
                 </CardContent>
               </Card>
@@ -179,44 +198,58 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="clients" className="py-20 bg-white">
+      <section id="clients" className="py-24 bg-gradient-to-b from-gray-50 to-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-2xl md:text-4xl font-bold text-center mb-4 text-secondary">Нам доверяют</h2>
-          <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-            Крупнейшие компании и государственные организации выбирают нас
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 max-w-4xl mx-auto">
+          <div className="text-center mb-16">
+            <span className="inline-block px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold mb-4">
+              Клиенты
+            </span>
+            <h2 className="text-3xl md:text-5xl font-bold mb-4 text-secondary">Нам доверяют</h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Крупнейшие компании и государственные организации выбирают нас
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {clients.map((client, index) => (
-              <div key={index} className="flex items-center justify-center p-6 bg-gray-50 rounded-lg hover:shadow-md transition-shadow">
-                <p className="text-center font-medium text-secondary">{client}</p>
+              <div key={index} className="group flex items-center justify-center p-8 bg-white border-2 border-gray-100 rounded-xl hover:border-primary hover:shadow-lg transition-all duration-300">
+                <p className="text-center font-semibold text-secondary group-hover:text-primary transition-colors">{client}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section id="about" className="py-20 bg-gradient-to-br from-secondary to-blue-900 text-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-4xl font-bold mb-6">О компании</h2>
-            <p className="text-lg mb-6 text-blue-100">
-              ЧОП "СБ ЗВИ" — это команда сертифицированных специалистов с опытом работы более 15 лет в области информационной безопасности.
-            </p>
-            <p className="text-lg mb-8 text-blue-100">
-              Мы помогаем организациям выполнить требования регуляторов, защитить критически важную информацию и построить эффективную систему управления информационной безопасностью.
-            </p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
-              <div>
-                <div className="text-5xl font-bold text-primary mb-2">100+</div>
-                <p className="text-blue-100">Завершенных проектов</p>
+      <section id="about" className="py-24 bg-gradient-to-br from-secondary via-blue-900 to-secondary text-white relative overflow-hidden">
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-0 left-0 w-96 h-96 bg-primary rounded-full filter blur-3xl"></div>
+          <div className="absolute bottom-0 right-0 w-96 h-96 bg-blue-500 rounded-full filter blur-3xl"></div>
+        </div>
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-16">
+              <span className="inline-block px-4 py-2 bg-white/10 backdrop-blur-sm text-white rounded-full text-sm font-semibold mb-6">
+                О компании
+              </span>
+              <h2 className="text-3xl md:text-5xl font-bold mb-8">Надежная защита вашего бизнеса</h2>
+              <p className="text-xl mb-6 text-blue-100 leading-relaxed">
+                ЧОП "СБ ЗВИ" — это команда сертифицированных специалистов с опытом работы более 15 лет в области информационной безопасности.
+              </p>
+              <p className="text-lg text-blue-200 leading-relaxed">
+                Мы помогаем организациям выполнить требования регуляторов, защитить критически важную информацию и построить эффективную систему управления информационной безопасностью.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="text-center p-8 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 hover:bg-white/15 transition-all duration-300">
+                <div className="text-6xl font-bold text-primary mb-3">100+</div>
+                <p className="text-lg text-blue-100 font-medium">Завершенных проектов</p>
               </div>
-              <div>
-                <div className="text-5xl font-bold text-primary mb-2">15</div>
-                <p className="text-blue-100">Лет на рынке</p>
+              <div className="text-center p-8 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 hover:bg-white/15 transition-all duration-300">
+                <div className="text-6xl font-bold text-primary mb-3">15</div>
+                <p className="text-lg text-blue-100 font-medium">Лет на рынке</p>
               </div>
-              <div>
-                <div className="text-5xl font-bold text-primary mb-2">98%</div>
-                <p className="text-blue-100">Довольных клиентов</p>
+              <div className="text-center p-8 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 hover:bg-white/15 transition-all duration-300">
+                <div className="text-6xl font-bold text-primary mb-3">98%</div>
+                <p className="text-lg text-blue-100 font-medium">Довольных клиентов</p>
               </div>
             </div>
           </div>
