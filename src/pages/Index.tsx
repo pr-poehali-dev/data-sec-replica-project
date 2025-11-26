@@ -145,7 +145,18 @@ const Index = () => {
         { label: 'Законодательство', href: '#' }
       ]
     },
-    { label: 'Компания', href: '#about', dropdown: null },
+    { 
+      label: 'Компания', 
+      href: '#about', 
+      dropdown: [
+        { label: 'О компании', href: '#about' },
+        { label: 'История', href: '#' },
+        { label: 'Лицензии и сертификаты', href: '#' },
+        { label: 'Клиенты', href: '#clients' },
+        { label: 'Партнеры', href: '#' },
+        { label: 'Вакансии', href: '#' }
+      ]
+    },
     { label: 'Контакты', href: '#contacts', dropdown: null }
   ];
 
