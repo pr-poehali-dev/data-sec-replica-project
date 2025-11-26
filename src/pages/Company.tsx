@@ -96,15 +96,15 @@ const Company = () => {
               <h2 className="text-4xl font-bold mb-6 text-secondary">Наши достижения</h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
                 <div>
-                  <div className="text-5xl font-bold text-primary mb-2">500+</div>
+                  <div className="text-3xl md:text-5xl font-bold text-primary mb-2">500+</div>
                   <p className="text-muted-foreground">Завершенных проектов</p>
                 </div>
                 <div>
-                  <div className="text-5xl font-bold text-primary mb-2">15</div>
+                  <div className="text-3xl md:text-5xl font-bold text-primary mb-2">15</div>
                   <p className="text-muted-foreground">Лет на рынке</p>
                 </div>
                 <div>
-                  <div className="text-5xl font-bold text-primary mb-2">98%</div>
+                  <div className="text-3xl md:text-5xl font-bold text-primary mb-2">98%</div>
                   <p className="text-muted-foreground">Довольных клиентов</p>
                 </div>
               </div>

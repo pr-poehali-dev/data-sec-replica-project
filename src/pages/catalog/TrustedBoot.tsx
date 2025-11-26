@@ -116,7 +116,7 @@ const TrustedBoot = () => {
                 <div className="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center">
                   <Icon name="ShieldCheck" className="text-white" size={24} />
                 </div>
-                <h1 className="text-4xl font-bold">Средства доверенной загрузки</h1>
+                <h1 className="text-2xl md:text-4xl font-bold">Средства доверенной загрузки</h1>
               </div>
               <p className="text-xl text-blue-100">
                 Программно-аппаратные комплексы для контроля целостности и обеспечения безопасной загрузки операционной системы
@@ -143,7 +143,7 @@ const TrustedBoot = () => {
 
             <h2 className="text-3xl font-bold text-secondary mb-8">От каких угроз защищают СДЗ</h2>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mb-16">
               {threats.map((threat, idx) => (
                 <div key={idx} className="bg-white border-2 border-red-200 rounded-lg p-6 text-center">
                   <div className="w-14 h-14 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -157,7 +157,7 @@ const TrustedBoot = () => {
 
             <h2 className="text-3xl font-bold text-secondary mb-8">Как это работает</h2>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mb-16">
               {howItWorks.map((item, idx) => (
                 <div key={idx} className="relative">
                   <div className="bg-white border border-gray-200 rounded-lg p-6">
@@ -200,7 +200,7 @@ const TrustedBoot = () => {
                       </div>
                     </div>
 
-                    <div className="grid md:grid-cols-2 gap-6 mt-4">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
                       <div>
                         <h4 className="font-semibold text-secondary mb-3 flex items-center gap-2">
                           <Icon name="CheckCircle2" className="text-primary" size={20} />

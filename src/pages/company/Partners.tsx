@@ -136,7 +136,7 @@ const Partners = () => {
                 <div className="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center">
                   <Icon name="Handshake" className="text-white" size={24} />
                 </div>
-                <h1 className="text-4xl font-bold">Наши партнеры</h1>
+                <h1 className="text-2xl md:text-4xl font-bold"Наши партнеры</h1>
               </div>
               <p className="text-xl text-blue-100">
                 Сотрудничество с ведущими производителями и интеграторами решений ИБ
@@ -154,7 +154,7 @@ const Partners = () => {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-6 mb-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
               {vendors.map((vendor, index) => (
                 <Card key={index} className="border-gray-200 hover:shadow-lg transition-shadow">
                   <CardHeader>
@@ -206,7 +206,7 @@ const Partners = () => {
               Мы сотрудничаем с крупнейшими системными интеграторами для реализации комплексных проектов в области информационной безопасности.
             </p>
 
-            <div className="grid md:grid-cols-3 gap-6 mb-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
               {integrators.map((integrator, index) => (
                 <Card key={index} className="border-gray-200">
                   <CardHeader>
@@ -227,7 +227,7 @@ const Partners = () => {
               Наши специалисты регулярно проходят обучение и сертификацию в авторизованных учебных центрах производителей СЗИ.
             </p>
 
-            <div className="grid md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {certCenters.map((center, index) => (
                 <Card key={index} className="border-gray-200">
                   <CardHeader>
@@ -264,7 +264,7 @@ const Partners = () => {
               
               <div className="bg-white border border-gray-200 rounded-lg p-8 max-w-2xl mx-auto">
                 <h3 className="text-xl font-semibold text-secondary mb-4">Что мы предлагаем партнерам</h3>
-                <div className="grid md:grid-cols-2 gap-4 text-left">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
                   <div className="flex items-start gap-3">
                     <Icon name="CheckCircle" className="text-primary flex-shrink-0 mt-1" size={20} />
                     <div>

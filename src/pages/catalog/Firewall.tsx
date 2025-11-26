@@ -132,7 +132,7 @@ const Firewall = () => {
                 <div className="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center">
                   <Icon name="Network" className="text-white" size={24} />
                 </div>
-                <h1 className="text-4xl font-bold">Межсетевое экранирование</h1>
+                <h1 className="text-2xl md:text-4xl font-bold">Межсетевое экранирование</h1>
               </div>
               <p className="text-xl text-blue-100">
                 Сертифицированные межсетевые экраны для защиты периметра сети от внешних и внутренних угроз
@@ -181,7 +181,7 @@ const Firewall = () => {
                       </div>
                     </div>
 
-                    <div className="grid md:grid-cols-2 gap-6 mt-4">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
                       <div>
                         <h4 className="font-semibold text-secondary mb-3 flex items-center gap-2">
                           <Icon name="CheckCircle2" className="text-primary" size={20} />
@@ -232,7 +232,7 @@ const Firewall = () => {
 
             <h2 className="text-3xl font-bold text-secondary mb-8 text-center">Основные функции МЭ</h2>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mb-16">
               {capabilities.map((capability, idx) => (
                 <div key={idx} className="bg-white border border-gray-200 rounded-lg p-6">
                   <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-4">

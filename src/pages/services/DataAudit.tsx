@@ -175,7 +175,7 @@ const DataAudit = () => {
                 <div className="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center">
                   <Icon name="ClipboardCheck" className="text-white" size={24} />
                 </div>
-                <h1 className="text-4xl font-bold">Аудит персональных данных</h1>
+                <h1 className="text-2xl md:text-4xl font-bold"Аудит персональных данных</h1>
               </div>
               <p className="text-xl text-blue-100 mb-8">
                 Выдача официальных документов, подтверждающих соответствие обработки персональных данных требованиям Федерального закона № 152-ФЗ и других нормативных актов
@@ -250,7 +250,7 @@ const DataAudit = () => {
                   <CardTitle className="text-2xl">Что проверяется при аудите</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <div className="grid md:grid-cols-2 gap-4">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     {checklist.map((item, idx) => (
                       <div key={idx} className="flex items-start gap-3">
                         <Icon name="CheckCircle2" className="text-primary flex-shrink-0 mt-0.5" size={18} />
@@ -263,7 +263,7 @@ const DataAudit = () => {
             </div>
 
             <h3 className="text-2xl font-bold text-secondary mb-8 text-center">Виды аудита</h3>
-            <div className="grid md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {auditTypes.map((type, idx) => (
                 <Card key={idx} className="border-l-4 border-primary hover:shadow-lg transition-shadow">
                   <CardHeader>
@@ -300,7 +300,7 @@ const DataAudit = () => {
             </div>
 
             <h3 className="text-2xl font-bold text-secondary mb-8 text-center">По результатам аудита вы получите</h3>
-            <div className="grid md:grid-cols-3 gap-6 mb-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
               {results.map((result, idx) => (
                 <Card key={idx} className="hover:shadow-lg transition-shadow border-t-4 border-t-green-500">
                   <CardHeader>

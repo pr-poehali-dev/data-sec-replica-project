@@ -150,7 +150,7 @@ const PersonalData = () => {
                 <div className="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center">
                   <Icon name="Lock" className="text-white" size={24} />
                 </div>
-                <h1 className="text-4xl font-bold">Защита персональных данных</h1>
+                <h1 className="text-2xl md:text-4xl font-bold">Защита персональных данных</h1>
               </div>
               <p className="text-xl text-blue-100 mb-6">
                 Комплексные услуги по приведению обработки персональных данных в соответствие с требованиями ФЗ-152
@@ -240,7 +240,7 @@ const PersonalData = () => {
 
             <h2 className="text-3xl font-bold text-secondary mb-8 text-center">Комплект документации</h2>
 
-            <div className="grid md:grid-cols-2 gap-6 mb-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mb-16">
               {documents.map((doc, idx) => (
                 <Card key={idx} className="border-gray-200">
                   <CardHeader>
@@ -265,7 +265,7 @@ const PersonalData = () => {
 
             <h2 className="text-3xl font-bold text-secondary mb-8 text-center">Преимущества работы с нами</h2>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mb-12">
               {advantages.map((adv, idx) => (
                 <div key={idx} className="bg-white border border-gray-200 rounded-lg p-6 text-center hover:shadow-lg transition-shadow">
                   <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">

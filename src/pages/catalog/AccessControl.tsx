@@ -124,7 +124,7 @@ const AccessControl = () => {
                 <div className="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center">
                   <Icon name="Lock" className="text-white" size={24} />
                 </div>
-                <h1 className="text-4xl font-bold">Защита информации от НСД</h1>
+                <h1 className="text-2xl md:text-4xl font-bold">Защита информации от НСД</h1>
               </div>
               <p className="text-xl text-blue-100">
                 Сертифицированные средства контроля доступа и защиты конфиденциальной информации от несанкционированного доступа
@@ -151,7 +151,7 @@ const AccessControl = () => {
 
             <h2 className="text-3xl font-bold text-secondary mb-8">Соответствие уровням защищенности</h2>
 
-            <div className="grid md:grid-cols-3 gap-6 mb-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mb-16">
               {protectionLevels.map((level, idx) => (
                 <div 
                   key={idx} 
@@ -206,7 +206,7 @@ const AccessControl = () => {
                       </div>
                     </div>
 
-                    <div className="grid md:grid-cols-2 gap-6 mt-4">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mt-4">
                       <div>
                         <h4 className="font-semibold text-secondary mb-3 flex items-center gap-2">
                           <Icon name="CheckCircle2" className="text-primary" size={20} />

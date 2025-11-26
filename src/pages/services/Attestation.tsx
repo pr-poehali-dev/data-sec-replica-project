@@ -123,7 +123,7 @@ const Attestation = () => {
                 <div className="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center">
                   <Icon name="Award" className="text-white" size={24} />
                 </div>
-                <h1 className="text-4xl font-bold">Аттестация объектов информатизации</h1>
+                <h1 className="text-2xl md:text-4xl font-bold"Аттестация объектов информатизации</h1>
               </div>
               <p className="text-xl text-blue-100 mb-6">
                 Комплексная оценка защищенности информационных систем и получение аттестата соответствия
@@ -161,7 +161,7 @@ const Attestation = () => {
 
             <h2 className="text-3xl font-bold text-secondary mb-8 text-center">Типы объектов аттестации</h2>
 
-            <div className="grid md:grid-cols-2 gap-6 mb-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
               {objectTypes.map((type, idx) => (
                 <Card key={idx} className="border-gray-200 hover:shadow-lg transition-shadow">
                   <CardHeader>
@@ -206,7 +206,7 @@ const Attestation = () => {
 
             <h2 className="text-3xl font-bold text-secondary mb-8 text-center">Этапы аттестации</h2>
 
-            <div className="grid md:grid-cols-2 gap-6 mb-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
               {stages.map((stage, idx) => (
                 <Card key={idx} className="border-l-4 border-primary">
                   <CardHeader>
@@ -241,7 +241,7 @@ const Attestation = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="grid md:grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {documents.map((doc, idx) => (
                     <div key={idx} className="flex items-start gap-3 bg-gray-50 rounded-lg p-4">
                       <Icon name="FileText" className="text-primary flex-shrink-0 mt-1" size={20} />

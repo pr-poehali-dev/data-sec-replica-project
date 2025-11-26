@@ -167,7 +167,7 @@ const DocumentDevelopment = () => {
                 <div className="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center">
                   <Icon name="FileText" className="text-white" size={24} />
                 </div>
-                <h1 className="text-4xl font-bold">Разработка документов по персональным данным</h1>
+                <h1 className="text-2xl md:text-4xl font-bold">Разработка документов по персональным данным</h1>
               </div>
               <p className="text-xl text-blue-100 mb-8">
                 Приведение в соответствие требованиям 152-ФЗ. Разработка и внедрение организационных мер и полного пакета локальной документации по вопросам обработки и защиты персональных данных
@@ -199,7 +199,7 @@ const DocumentDevelopment = () => {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-6 mb-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mb-16">
               {reasons.map((reason, idx) => (
                 <Card key={idx} className="border-l-4 border-primary hover:shadow-lg transition-shadow">
                   <CardHeader>

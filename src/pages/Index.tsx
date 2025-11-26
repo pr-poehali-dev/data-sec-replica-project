@@ -109,7 +109,7 @@ const Index = () => {
 
       <section id="services" className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-4 text-secondary">Наши услуги</h2>
+          <h2 className="text-2xl md:text-4xl font-bold text-center mb-4 text-secondary">Наши услуги</h2>
           <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
             Полный спектр решений для обеспечения информационной безопасности вашей организации
           </p>
@@ -133,7 +133,7 @@ const Index = () => {
 
       <section id="projects" className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-4 text-secondary">Реализованные проекты</h2>
+          <h2 className="text-2xl md:text-4xl font-bold text-center mb-4 text-secondary">Реализованные проекты</h2>
           <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
             Успешный опыт работы с крупнейшими компаниями и государственными структурами
           </p>
@@ -158,7 +158,7 @@ const Index = () => {
 
       <section id="faq" className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-4 text-secondary">Вопросы и ответы</h2>
+          <h2 className="text-2xl md:text-4xl font-bold text-center mb-4 text-secondary">Вопросы и ответы</h2>
           <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
             Ответы на наиболее частые вопросы по информационной безопасности
           </p>
@@ -181,11 +181,11 @@ const Index = () => {
 
       <section id="clients" className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-4 text-secondary">Нам доверяют</h2>
+          <h2 className="text-2xl md:text-4xl font-bold text-center mb-4 text-secondary">Нам доверяют</h2>
           <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
             Крупнейшие компании и государственные организации выбирают нас
           </p>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 max-w-4xl mx-auto">
             {clients.map((client, index) => (
               <div key={index} className="flex items-center justify-center p-6 bg-gray-50 rounded-lg hover:shadow-md transition-shadow">
                 <p className="text-center font-medium text-secondary">{client}</p>

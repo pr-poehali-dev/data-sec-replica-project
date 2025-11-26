@@ -138,7 +138,7 @@ const Consulting = () => {
                 <div className="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center">
                   <Icon name="Users" className="text-white" size={24} />
                 </div>
-                <h1 className="text-4xl font-bold">Консалтинг и обучение</h1>
+                <h1 className="text-2xl md:text-4xl font-bold"Консалтинг и обучение</h1>
               </div>
               <p className="text-xl text-blue-100 mb-6">
                 Экспертное сопровождение по всем вопросам информационной безопасности
@@ -191,7 +191,7 @@ const Consulting = () => {
 
             <h2 className="text-3xl font-bold text-secondary mb-8 text-center">Наши эксперты</h2>
 
-            <div className="grid md:grid-cols-3 gap-6 mb-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mb-16">
               {experts.map((expert, idx) => (
                 <div key={idx} className="bg-white border-2 border-gray-200 rounded-lg p-6 text-center hover:border-primary transition-colors">
                   <div className="w-20 h-20 bg-gradient-to-br from-primary to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -225,7 +225,7 @@ const Consulting = () => {
                         <CardTitle className="text-xl text-secondary mb-2">{caseItem.company}</CardTitle>
                       </div>
                     </div>
-                    <div className="grid md:grid-cols-2 gap-6">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
                       <div>
                         <h4 className="font-semibold text-secondary mb-2 flex items-center gap-2">
                           <Icon name="Target" className="text-primary" size={18} />
@@ -249,7 +249,7 @@ const Consulting = () => {
             <div className="bg-white border-2 border-primary rounded-lg p-8 mb-12">
               <h3 className="text-2xl font-bold text-secondary mb-6 text-center">Форматы работы</h3>
               
-              <div className="grid md:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
                 <div className="text-center">
                   <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     <Icon name="Clock" className="text-primary" size={32} />

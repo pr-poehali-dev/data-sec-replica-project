@@ -95,7 +95,7 @@ const FAQ = () => {
                 <div className="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center">
                   <Icon name="MessageCircle" className="text-white" size={24} />
                 </div>
-                <h1 className="text-4xl font-bold">Вопросы и ответы</h1>
+                <h1 className="text-2xl md:text-4xl font-bold"Вопросы и ответы</h1>
               </div>
               <p className="text-xl text-blue-100">
                 Ответы на частые вопросы по информационной безопасности от наших экспертов
@@ -178,7 +178,7 @@ const FAQ = () => {
               Полезные материалы
             </h2>
 
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
               <div className="text-center">
                 <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Icon name="BookOpen" className="text-primary" size={32} />

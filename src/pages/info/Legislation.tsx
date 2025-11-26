@@ -121,7 +121,7 @@ const Legislation = () => {
                 <div className="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center">
                   <Icon name="Scale" className="text-white" size={24} />
                 </div>
-                <h1 className="text-4xl font-bold">Законодательство</h1>
+                <h1 className="text-2xl md:text-4xl font-bold">Законодательство</h1>
               </div>
               <p className="text-xl text-blue-100">
                 База нормативных документов и законодательных актов в области защиты информации

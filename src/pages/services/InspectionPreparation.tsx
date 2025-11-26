@@ -167,7 +167,7 @@ const InspectionPreparation = () => {
                 <div className="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center">
                   <Icon name="ClipboardCheck" className="text-white" size={24} />
                 </div>
-                <h1 className="text-4xl font-bold">Подготовка к проверке Роскомнадзора</h1>
+                <h1 className="text-2xl md:text-4xl font-bold">Подготовка к проверке Роскомнадзора</h1>
               </div>
               <p className="text-xl text-blue-100 mb-8">
                 Приведение обработки персональных данных в соответствие требованиям Федерального закона № 152-ФЗ с целью успешного прохождения проверки и профилактического визита
@@ -195,7 +195,7 @@ const InspectionPreparation = () => {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-6 mb-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mb-16">
               {risks.map((risk, idx) => (
                 <Card key={idx} className="border-l-4 border-red-500 hover:shadow-lg transition-shadow">
                   <CardHeader>
@@ -240,7 +240,7 @@ const InspectionPreparation = () => {
                   <CardTitle className="text-2xl">Что проверяют в первую очередь</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <div className="grid md:grid-cols-2 gap-4">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="flex items-start gap-3">
                       <Icon name="FileText" className="text-primary flex-shrink-0 mt-1" size={20} />
                       <p className="text-gray-700">
@@ -273,7 +273,7 @@ const InspectionPreparation = () => {
             <h3 className="text-2xl font-bold text-secondary mb-6">Полный перечень проверяемых вопросов</h3>
             <Card>
               <CardContent className="pt-6">
-                <ul className="grid md:grid-cols-2 gap-3">
+                <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">
                   {whatChecked.map((item, idx) => (
                     <li key={idx} className="flex items-start gap-2">
                       <Icon name="CheckCircle2" className="text-primary flex-shrink-0 mt-0.5" size={18} />
@@ -293,7 +293,7 @@ const InspectionPreparation = () => {
               Специалисты ЧОП "СБ ЗВИ" имеют большой опыт взаимодействия с Роскомнадзором в ходе контрольных мероприятий
             </p>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mb-16">
               {services.map((service, idx) => (
                 <Card key={idx} className="hover:shadow-lg transition-shadow">
                   <CardHeader>
@@ -325,7 +325,7 @@ const InspectionPreparation = () => {
             </div>
 
             <h3 className="text-2xl font-bold text-secondary mb-8 text-center">По результатам подготовки вы получите</h3>
-            <div className="grid md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
               <Card className="border-l-4 border-green-500">
                 <CardHeader>
                   <div className="flex items-center gap-3">
@@ -432,7 +432,7 @@ const InspectionPreparation = () => {
           <div className="container mx-auto px-4 max-w-6xl">
             <h2 className="text-3xl font-bold text-secondary mb-12 text-center">Наши преимущества</h2>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mb-16">
               {advantages.map((adv, idx) => (
                 <Card key={idx} className="hover:shadow-lg transition-shadow">
                   <CardHeader>

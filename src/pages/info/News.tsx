@@ -100,7 +100,7 @@ const News = () => {
                 <div className="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center">
                   <Icon name="Newspaper" className="text-white" size={24} />
                 </div>
-                <h1 className="text-4xl font-bold">Новости о ПДн</h1>
+                <h1 className="text-2xl md:text-4xl font-bold"Новости о ПДн</h1>
               </div>
               <p className="text-xl text-blue-100">
                 Актуальные новости в сфере защиты персональных данных и информационной безопасности

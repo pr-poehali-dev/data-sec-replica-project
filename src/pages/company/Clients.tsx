@@ -154,7 +154,7 @@ const Clients = () => {
                 <div className="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center">
                   <Icon name="Users" className="text-white" size={24} />
                 </div>
-                <h1 className="text-4xl font-bold">Наши клиенты</h1>
+                <h1 className="text-2xl md:text-4xl font-bold"Наши клиенты</h1>
               </div>
               <p className="text-xl text-blue-100">
                 Более 250 компаний и организаций доверяют нам защиту своей информации
@@ -192,7 +192,7 @@ const Clients = () => {
             </div>
 
             <h2 className="text-3xl font-bold text-secondary mb-8">Клиенты по отраслям</h2>
-            <div className="grid md:grid-cols-2 gap-6 mb-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
               {sectors.map((sector, index) => (
                 <Card key={index} className="border-gray-200 hover:shadow-lg transition-shadow">
                   <CardHeader>
@@ -272,7 +272,7 @@ const Clients = () => {
               <Icon name="MessageSquare" className="mx-auto mb-6 text-primary" size={48} />
               <h2 className="text-3xl font-bold text-secondary mb-6">Отзывы клиентов</h2>
               
-              <div className="grid md:grid-cols-2 gap-6 mt-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
                 <div className="bg-white border border-gray-200 rounded-lg p-6 text-left">
                   <div className="flex items-center gap-2 mb-4">
                     {[1,2,3,4,5].map((star) => (

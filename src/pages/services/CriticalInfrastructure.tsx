@@ -183,7 +183,7 @@ const CriticalInfrastructure = () => {
                 <div className="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center">
                   <Icon name="Server" className="text-white" size={24} />
                 </div>
-                <h1 className="text-4xl font-bold">Критическая информационная инфраструктура (КИИ)</h1>
+                <h1 className="text-2xl md:text-4xl font-bold"Критическая информационная инфраструктура (КИИ)</h1>
               </div>
               <p className="text-xl text-gray-300 mb-8">
                 Услуги по обеспечению безопасности объектов критической информационной инфраструктуры Российской Федерации в соответствии с требованиями Федерального закона №187-ФЗ
@@ -221,7 +221,7 @@ const CriticalInfrastructure = () => {
 
             <h2 className="text-3xl font-bold text-secondary mb-12 text-center">Наши услуги в области КИИ</h2>
 
-            <div className="grid md:grid-cols-3 gap-8 mb-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
               {services.map((service, idx) => (
                 <Card key={idx} className="hover:shadow-xl transition-shadow border-t-4 border-t-gray-900">
                   <CardHeader>
@@ -254,7 +254,7 @@ const CriticalInfrastructure = () => {
               Важно отметить, что обязанность по выполнению защитных мер распространяется на все виды организаций
             </p>
 
-            <div className="grid md:grid-cols-2 gap-6 mb-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
               {obligations.map((item, idx) => (
                 <Card key={idx} className="border-l-4 border-orange-500 hover:shadow-lg transition-shadow">
                   <CardHeader>
@@ -332,7 +332,7 @@ const CriticalInfrastructure = () => {
           <div className="container mx-auto px-4 max-w-6xl">
             <h2 className="text-3xl font-bold text-secondary mb-12 text-center">Нормативная база</h2>
 
-            <div className="grid md:grid-cols-2 gap-6 mb-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
               {requirements.map((req, idx) => (
                 <Card key={idx} className="hover:shadow-lg transition-shadow">
                   <CardHeader>
@@ -359,7 +359,7 @@ const CriticalInfrastructure = () => {
               Несоблюдение требований законодательства о КИИ влечет серьезные последствия
             </p>
 
-            <div className="grid md:grid-cols-3 gap-6 mb-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
               {penalties.map((penalty, idx) => (
                 <Card key={idx} className={`border-t-4 ${penalty.severity === 'high' ? 'border-t-red-600' : 'border-t-orange-500'} hover:shadow-lg transition-shadow`}>
                   <CardHeader>
