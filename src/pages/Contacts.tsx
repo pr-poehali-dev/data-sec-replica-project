@@ -88,7 +88,7 @@ const Contacts = () => {
               <h2 className="text-3xl font-bold text-secondary mb-8 text-center">Как нас найти</h2>
               <div className="rounded-lg overflow-hidden shadow-lg border border-gray-200">
                 <iframe
-                  src="https://yandex.ru/map-widget/v1/?um=constructor%3A0c7f5e5f5f5f5f5f5f5f5f5f5f5f5f5f&amp;source=constructor"
+                  src="https://yandex.ru/map-widget/v1/?ll=37.629742%2C55.728634&z=16&l=map&pt=37.629742,55.728634,pm2rdm"
                   width="100%"
                   height="400"
                   frameBorder="0"
