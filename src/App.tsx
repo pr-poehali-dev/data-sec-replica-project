@@ -7,7 +7,12 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Services from "./pages/Services";
 import Catalog from "./pages/Catalog";
-import Info from "./pages/Info";
+import PersonalDataBasics from "./pages/info/PersonalDataBasics";
+import Penalties from "./pages/info/Penalties";
+import Articles from "./pages/info/Articles";
+import FAQ from "./pages/info/FAQ";
+import News from "./pages/info/News";
+import Legislation from "./pages/info/Legislation";
 import Company from "./pages/Company";
 import Contacts from "./pages/Contacts";
 import NotFound from "./pages/NotFound";
@@ -26,8 +31,12 @@ const App = () => (
           <Route path="/services/:slug" element={<Services />} />
           <Route path="/catalog" element={<Catalog />} />
           <Route path="/catalog/:slug" element={<Catalog />} />
-          <Route path="/info" element={<Info />} />
-          <Route path="/info/:slug" element={<Info />} />
+          <Route path="/info/personal-data-basics" element={<PersonalDataBasics />} />
+          <Route path="/info/penalties" element={<Penalties />} />
+          <Route path="/info/articles" element={<Articles />} />
+          <Route path="/info/faq" element={<FAQ />} />
+          <Route path="/info/news" element={<News />} />
+          <Route path="/info/legislation" element={<Legislation />} />
           <Route path="/company" element={<Company />} />
           <Route path="/company/:slug" element={<Company />} />
           <Route path="/contacts" element={<Contacts />} />

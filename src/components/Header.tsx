@@ -45,7 +45,7 @@ const Header = () => {
     },
     {
       label: 'Информация',
-      href: '/info',
+      href: '#',
       dropdown: [
         { label: 'Ликбез по персональным данным', href: '/info/personal-data-basics' },
         { label: 'Штрафы за нарушения', href: '/info/penalties' },
