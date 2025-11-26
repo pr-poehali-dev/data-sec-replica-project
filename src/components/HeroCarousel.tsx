@@ -23,7 +23,7 @@ const slides: Slide[] = [
     id: 1,
     title: 'Приведение в соответствие Закону о персональных данных',
     description: 'Поможем разработать и внедрить комплект организационно-распорядительной документации по вопросам обработки и защиты персональных данных',
-    image: 'https://cdn.poehali.dev/projects/d2c8f28a-afc1-4869-912c-685feedfe6a4/files/6ac1ea27-6a44-4288-9514-ac982ae1276c.jpg',
+    image: 'https://cdn.poehali.dev/files/1c88f054-68f6-49d0-8605-4adca4e038b0.png',
     primaryButton: {
       text: 'Подробнее',
       link: '/services/personal-data',
