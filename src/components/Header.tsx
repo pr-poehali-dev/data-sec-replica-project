@@ -22,7 +22,7 @@ const Header = () => {
     },
     { 
       label: 'Каталог СЗИ', 
-      href: '/catalog', 
+      href: '#', 
       dropdown: 'extended',
       dropdownData: [
         {

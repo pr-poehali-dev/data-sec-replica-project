@@ -6,7 +6,10 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Services from "./pages/Services";
-import Catalog from "./pages/Catalog";
+import Antivirus from "./pages/catalog/Antivirus";
+import AccessControl from "./pages/catalog/AccessControl";
+import TrustedBoot from "./pages/catalog/TrustedBoot";
+import Firewall from "./pages/catalog/Firewall";
 import PersonalDataBasics from "./pages/info/PersonalDataBasics";
 import Penalties from "./pages/info/Penalties";
 import Articles from "./pages/info/Articles";
@@ -29,8 +32,10 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/services" element={<Services />} />
           <Route path="/services/:slug" element={<Services />} />
-          <Route path="/catalog" element={<Catalog />} />
-          <Route path="/catalog/:slug" element={<Catalog />} />
+          <Route path="/catalog/antivirus" element={<Antivirus />} />
+          <Route path="/catalog/access-control" element={<AccessControl />} />
+          <Route path="/catalog/trusted-boot" element={<TrustedBoot />} />
+          <Route path="/catalog/firewall" element={<Firewall />} />
           <Route path="/info/personal-data-basics" element={<PersonalDataBasics />} />
           <Route path="/info/penalties" element={<Penalties />} />
           <Route path="/info/articles" element={<Articles />} />
