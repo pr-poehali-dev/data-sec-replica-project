@@ -24,7 +24,7 @@ const slides: Slide[] = [
     id: 1,
     title: 'Приведение в соответствие Закону о персональных данных',
     description: 'Поможем разработать и внедрить комплект организационно-распорядительной документации по вопросам обработки и защиты персональных данных',
-    image: 'https://cdn.poehali.dev/files/f13211f4-3642-48f2-818e-f8af5d6fa7e9.png',
+    image: 'https://cdn.poehali.dev/projects/d2c8f28a-afc1-4869-912c-685feedfe6a4/files/6ac1ea27-6a44-4288-9514-ac982ae1276c.jpg',
     primaryButton: {
       text: 'Подробнее',
       link: '/services/personal-data',
@@ -38,7 +38,7 @@ const slides: Slide[] = [
     id: 2,
     title: 'Подготовка к проверкам Роскомнадзора',
     description: 'Поможем привести обработку персональных данных в соответствие требованиям закона с целью успешного прохождения проверки в области персональных данных',
-    image: 'https://cdn.poehali.dev/files/0141dea9-8472-4dd0-b2fc-94ab223e9010.png',
+    image: 'https://cdn.poehali.dev/projects/d2c8f28a-afc1-4869-912c-685feedfe6a4/files/c043964e-10c2-4811-b644-3c8243f4f27a.jpg',
     primaryButton: {
       text: 'Подробнее',
       link: '/services/personal-data',
@@ -52,7 +52,7 @@ const slides: Slide[] = [
     id: 3,
     title: 'Аудит соответствия обработки персональных данных',
     description: 'Выдача официальных документов, подтверждающих соответствие обработки персональных данных требованиям Федерального закона №152-ФЗ «О персональных данных»',
-    image: 'https://cdn.poehali.dev/files/f08d97c5-721d-409d-a7f9-a4febd26e314.png',
+    image: 'https://cdn.poehali.dev/projects/d2c8f28a-afc1-4869-912c-685feedfe6a4/files/e27dae87-fd11-40a2-bd8b-b0550418eaef.jpg',
     primaryButton: {
       text: 'Подробнее',
       link: '/services/personal-data',
@@ -66,7 +66,7 @@ const slides: Slide[] = [
     id: 4,
     title: 'Обеспечение безопасности объектов КИИ',
     description: 'Услуги по категорированию и обеспечению безопасности объектов критической информационной инфраструктуры в соответствии с требованиями Федерального закона №187-ФЗ',
-    image: 'https://cdn.poehali.dev/files/8aaf99f4-4195-48bb-9d13-d78cd1364312.png',
+    image: 'https://cdn.poehali.dev/projects/d2c8f28a-afc1-4869-912c-685feedfe6a4/files/045efd71-acd4-41db-aa3b-b9d3a76687c3.jpg',
     primaryButton: {
       text: 'Подробнее',
       link: '/services/attestation',
