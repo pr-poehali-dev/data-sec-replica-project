@@ -19,6 +19,12 @@ import FAQ from "./pages/info/FAQ";
 import News from "./pages/info/News";
 import Legislation from "./pages/info/Legislation";
 import Company from "./pages/Company";
+import About from "./pages/company/About";
+import History from "./pages/company/History";
+import Licenses from "./pages/company/Licenses";
+import Clients from "./pages/company/Clients";
+import Partners from "./pages/company/Partners";
+import Careers from "./pages/company/Careers";
 import Contacts from "./pages/Contacts";
 import NotFound from "./pages/NotFound";
 
@@ -46,7 +52,12 @@ const App = () => (
           <Route path="/info/news" element={<News />} />
           <Route path="/info/legislation" element={<Legislation />} />
           <Route path="/company" element={<Company />} />
-          <Route path="/company/:slug" element={<Company />} />
+          <Route path="/company/about" element={<About />} />
+          <Route path="/company/history" element={<History />} />
+          <Route path="/company/licenses" element={<Licenses />} />
+          <Route path="/company/clients" element={<Clients />} />
+          <Route path="/company/partners" element={<Partners />} />
+          <Route path="/company/careers" element={<Careers />} />
           <Route path="/contacts" element={<Contacts />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
