@@ -111,21 +111,21 @@ const HeroCarousel = () => {
           backgroundImage: `url(${slide.image})`,
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-secondary/90 via-secondary/70 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-secondary/80 via-secondary/50 to-blue-900/60"></div>
       </div>
 
       <div className="relative container mx-auto px-4 h-full flex items-center justify-center">
         <div className="max-w-4xl text-center">
-          <div className="bg-white/95 backdrop-blur-sm rounded-3xl p-8 md:p-12 shadow-2xl border border-gray-200">
-            <h1 className="text-3xl md:text-5xl font-bold mb-6 text-secondary leading-tight">
+          <div className="bg-white/10 backdrop-blur-md rounded-3xl p-8 md:p-12 shadow-2xl border border-white/20">
+            <h1 className="text-3xl md:text-5xl font-bold mb-6 text-white leading-tight drop-shadow-lg">
               {slide.title}
             </h1>
-            <p className="text-base md:text-xl mb-8 text-gray-700 leading-relaxed">
+            <p className="text-base md:text-xl mb-8 text-white/90 leading-relaxed drop-shadow-md">
               {slide.description}
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <Link to={slide.primaryButton.link}>
-                <Button size="lg" className="bg-primary hover:bg-blue-700 text-white shadow-lg hover:shadow-xl transition-all">
+                <Button size="lg" className="bg-white text-secondary hover:bg-gray-100 shadow-lg hover:shadow-xl transition-all font-semibold">
                   {slide.primaryButton.text}
                 </Button>
               </Link>
@@ -134,7 +134,7 @@ const HeroCarousel = () => {
                   <Button
                     size="lg"
                     variant="outline"
-                    className="border-2 border-primary bg-transparent text-primary hover:bg-primary hover:text-white shadow-lg hover:shadow-xl transition-all"
+                    className="border-2 border-white bg-transparent text-white hover:bg-white hover:text-secondary shadow-lg hover:shadow-xl transition-all font-semibold"
                   >
                     {slide.secondaryButton.text}
                   </Button>
