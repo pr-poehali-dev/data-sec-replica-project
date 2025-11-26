@@ -212,7 +212,7 @@ const About = () => {
               <h2 className="text-4xl font-bold mb-6 text-secondary">Наши достижения в цифрах</h2>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-12">
                 <div>
-                  <div className="text-4xl font-bold text-primary mb-2">500+</div>
+                  <div className="text-4xl font-bold text-primary mb-2">100+</div>
                   <p className="text-muted-foreground">Проектов реализовано</p>
                 </div>
                 <div>
@@ -220,7 +220,7 @@ const About = () => {
                   <p className="text-muted-foreground">Лет опыта</p>
                 </div>
                 <div>
-                  <div className="text-4xl font-bold text-primary mb-2">250+</div>
+                  <div className="text-4xl font-bold text-primary mb-2">50+</div>
                   <p className="text-muted-foreground">Постоянных клиентов</p>
                 </div>
                 <div>
