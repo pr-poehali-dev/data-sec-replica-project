@@ -230,7 +230,7 @@ const Index = () => {
               <Button size="lg" className="bg-primary hover:bg-blue-600 text-white">
                 Заказать консультацию
               </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-secondary">
+              <Button size="lg" variant="outline" className="border-2 border-white bg-transparent text-white hover:bg-white hover:text-secondary">
                 Наши услуги
               </Button>
             </div>
