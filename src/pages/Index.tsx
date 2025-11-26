@@ -1,12 +1,12 @@
-import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import Icon from '@/components/ui/icon';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 const Index = () => {
-  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const services = [
     {
@@ -96,193 +96,11 @@ const Index = () => {
     'АО "РЖД"'
   ];
 
-  const menuItems = [
-    {
-      label: 'Услуги и решения',
-      href: '#services',
-      dropdown: [
-        { label: 'Персональные данные', href: '#' },
-        { label: 'Критическая информационная инфраструктура (КИИ)', href: '#' },
-        { label: 'Конфиденциальная информация', href: '#' },
-        { label: 'Аттестация объектов информатизации', href: '#' },
-        { label: 'Защищенные приложения', href: '#' },
-        { label: 'Средства защиты информации', href: '#' },
-        { label: 'Консалтинг и обучение', href: '#' }
-      ]
-    },
-    { 
-      label: 'Каталог СЗИ', 
-      href: '#', 
-      dropdown: 'extended',
-      dropdownData: [
-        {
-          title: 'Защита серверов и рабочих станций',
-          icon: 'Monitor',
-          items: [
-            { label: 'Антивирусная защита', href: '#' },
-            { label: 'Защита информации от НСД', href: '#' },
-            { label: 'Средства доверенной загрузки', href: '#' }
-          ]
-        },
-        {
-          title: 'Сетевая безопасность',
-          icon: 'Network',
-          items: [
-            { label: 'Межсетевое экранирование', href: '#' }
-          ]
-        }
-      ]
-    },
-    {
-      label: 'Информация',
-      href: '#',
-      dropdown: [
-        { label: 'Ликбез по персональным данным', href: '#' },
-        { label: 'Штрафы за нарушения', href: '#' },
-        { label: 'Статьи и публикации', href: '#' },
-        { label: 'Вопросы и ответы', href: '#faq' },
-        { label: 'Новости о ПДн', href: '#' },
-        { label: 'Законодательство', href: '#' }
-      ]
-    },
-    { 
-      label: 'Компания', 
-      href: '#about', 
-      dropdown: [
-        { label: 'О компании', href: '#about' },
-        { label: 'История', href: '#' },
-        { label: 'Лицензии и сертификаты', href: '#' },
-        { label: 'Клиенты', href: '#clients' },
-        { label: 'Партнеры', href: '#' },
-        { label: 'Вакансии', href: '#' }
-      ]
-    },
-    { label: 'Контакты', href: '#contacts', dropdown: null }
-  ];
-
   return (
-    <div className="min-h-screen bg-white">
-      <header className="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm">
-        <div className="container mx-auto px-4">
-          <div className="flex items-center justify-between h-16">
-            <div className="flex items-center gap-2">
-              <div className="w-10 h-10 bg-gradient-to-br from-primary to-blue-600 rounded-lg flex items-center justify-center">
-                <Icon name="Shield" className="text-white" size={24} />
-              </div>
-              <div>
-                <h1 className="text-xl font-bold text-secondary">Центр Безопасности</h1>
-                <p className="text-xs text-muted-foreground">данных</p>
-              </div>
-            </div>
-
-            <nav className="hidden lg:flex items-center gap-6">
-              {menuItems.map((item, index) => (
-                <div
-                  key={index}
-                  className="relative"
-                  onMouseEnter={() => item.dropdown && setOpenDropdown(item.label)}
-                  onMouseLeave={() => setOpenDropdown(null)}
-                >
-                  <a
-                    href={item.href}
-                    className="text-sm font-medium text-secondary hover:text-primary transition-colors py-2 flex items-center gap-1"
-                  >
-                    {item.label}
-                    {item.dropdown && (
-                      <Icon name="ChevronDown" size={16} className={`transition-transform ${openDropdown === item.label ? 'rotate-180' : ''}`} />
-                    )}
-                  </a>
-                  
-                  {item.dropdown && openDropdown === item.label && (
-                    <>
-                      {item.dropdown === 'extended' ? (
-                        <div className="absolute top-full left-0 mt-0 bg-white border border-gray-200 rounded-lg shadow-lg min-w-[600px] animate-slide-down">
-                          <div className="p-6 grid grid-cols-2 gap-6">
-                            {item.dropdownData?.map((section: any, sectionIndex: number) => (
-                              <div key={sectionIndex}>
-                                <div className="flex items-center gap-3 mb-4">
-                                  <div className="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center">
-                                    <Icon name={section.icon} className="text-primary" size={24} />
-                                  </div>
-                                  <h3 className="font-semibold text-secondary">{section.title}</h3>
-                                </div>
-                                <div className="space-y-2 ml-2">
-                                  {section.items.map((subItem: any, subIndex: number) => (
-                                    <a
-                                      key={subIndex}
-                                      href={subItem.href}
-                                      className="block px-3 py-1.5 text-sm text-primary hover:text-blue-600 transition-colors"
-                                    >
-                                      {subItem.label}
-                                    </a>
-                                  ))}
-                                </div>
-                              </div>
-                            ))}
-                          </div>
-                        </div>
-                      ) : (
-                        <div className="absolute top-full left-0 mt-0 bg-white border border-gray-200 rounded-lg shadow-lg min-w-[280px] animate-slide-down">
-                          <div className="py-2">
-                            {Array.isArray(item.dropdown) && item.dropdown.map((subItem: any, subIndex: number) => (
-                              <a
-                                key={subIndex}
-                                href={subItem.href}
-                                className="block px-4 py-2 text-sm text-secondary hover:bg-blue-50 hover:text-primary transition-colors"
-                              >
-                                {subItem.label}
-                              </a>
-                            ))}
-                          </div>
-                        </div>
-                      )}
-                    </>
-                  )}
-                </div>
-              ))}
-            </nav>
-
-            <div className="hidden lg:flex items-center gap-2">
-              <Icon name="Search" className="text-secondary cursor-pointer hover:text-primary transition-colors" size={20} />
-            </div>
-
-            <button
-              className="lg:hidden p-2"
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            >
-              <Icon name={mobileMenuOpen ? 'X' : 'Menu'} size={24} className="text-secondary" />
-            </button>
-          </div>
-
-          {mobileMenuOpen && (
-            <div className="lg:hidden py-4 border-t border-gray-200 animate-fade-in">
-              {menuItems.map((item, index) => (
-                <div key={index}>
-                  <a
-                    href={item.href}
-                    className="block py-2 text-sm font-medium text-secondary hover:text-primary"
-                  >
-                    {item.label}
-                  </a>
-                  {item.dropdown && (
-                    <div className="pl-4">
-                      {item.dropdown.map((subItem, subIndex) => (
-                        <a
-                          key={subIndex}
-                          href={subItem.href}
-                          className="block py-1.5 text-xs text-muted-foreground hover:text-primary"
-                        >
-                          {subItem.label}
-                        </a>
-                      ))}
-                    </div>
-                  )}
-                </div>
-              ))}
-            </div>
-          )}
-        </div>
-      </header>
+    <div className="min-h-screen bg-white flex flex-col">
+      <Header />
+      
+      <main className="flex-grow">
 
       <section className="bg-gradient-to-br from-secondary via-secondary to-blue-900 text-white py-20">
         <div className="container mx-auto px-4">
@@ -294,12 +112,16 @@ const Index = () => {
               Профессиональные услуги по аттестации, аудиту и внедрению средств защиты информации для бизнеса и государственных организаций
             </p>
             <div className="flex flex-wrap gap-4 animate-fade-in">
-              <Button size="lg" className="bg-primary hover:bg-blue-600 text-white">
-                Заказать консультацию
-              </Button>
-              <Button size="lg" variant="outline" className="border-2 border-white bg-transparent text-white hover:bg-white hover:text-secondary">
-                Наши услуги
-              </Button>
+              <Link to="/contacts">
+                <Button size="lg" className="bg-primary hover:bg-blue-600 text-white">
+                  Заказать консультацию
+                </Button>
+              </Link>
+              <Link to="/services">
+                <Button size="lg" variant="outline" className="border-2 border-white bg-transparent text-white hover:bg-white hover:text-secondary">
+                  Наши услуги
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
@@ -463,48 +285,9 @@ const Index = () => {
         </div>
       </section>
 
-      <footer className="bg-secondary text-white py-12">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div>
-              <div className="flex items-center gap-2 mb-4">
-                <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                  <Icon name="Shield" className="text-white" size={20} />
-                </div>
-                <h3 className="font-bold">Центр Безопасности</h3>
-              </div>
-              <p className="text-sm text-blue-200">Защита информации на профессиональном уровне</p>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-4">Услуги</h4>
-              <ul className="space-y-2 text-sm text-blue-200">
-                <li><a href="#" className="hover:text-white transition-colors">Аттестация</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Аудит ИБ</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Консалтинг</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-4">Компания</h4>
-              <ul className="space-y-2 text-sm text-blue-200">
-                <li><a href="#" className="hover:text-white transition-colors">О нас</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Проекты</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Контакты</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-4">Контакты</h4>
-              <ul className="space-y-2 text-sm text-blue-200">
-                <li>+7 (495) 123-45-67</li>
-                <li>info@security-center.ru</li>
-                <li>Москва, ул. Примерная, 1</li>
-              </ul>
-            </div>
-          </div>
-          <div className="border-t border-blue-800 mt-8 pt-8 text-center text-sm text-blue-200">
-            <p>&copy; 2024 Центр Безопасности данных. Все права защищены.</p>
-          </div>
-        </div>
-      </footer>
+      </main>
+      
+      <Footer />
     </div>
   );
 };
