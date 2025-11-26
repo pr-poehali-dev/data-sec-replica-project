@@ -287,7 +287,7 @@ const DataAudit = () => {
           <div className="container mx-auto px-4 max-w-6xl">
             <h2 className="text-3xl font-bold text-secondary mb-4 text-center">Услуги по проведению аудита</h2>
             <p className="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
-              Специалисты Центра безопасности данных имеют большой опыт в области обработки и защиты персональных данных
+              Специалисты ЧОП "СБ ЗВИ" имеют большой опыт в области обработки и защиты персональных данных
             </p>
 
             <div className="mb-16">

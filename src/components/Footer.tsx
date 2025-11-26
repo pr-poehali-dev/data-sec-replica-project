@@ -11,9 +11,9 @@ const Footer = () => {
               <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
                 <Icon name="Shield" className="text-white" size={20} />
               </div>
-              <h3 className="font-bold">ЧОО "СБ ЗВИ"</h3>
+              <h3 className="font-bold">ЧОП "СБ ЗВИ"</h3>
             </div>
-            <p className="text-sm text-blue-200 mb-3">Центр Безопасности данных</p>
+            <p className="text-sm text-blue-200 mb-3">Частная охранная организация</p>
             <p className="text-xs text-blue-200">115093, г. Москва,<br />пер. Партийный, д. 1</p>
           </div>
           <div>
@@ -43,7 +43,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="border-t border-blue-800 mt-8 pt-8 text-center text-sm text-blue-200">
-          <p>&copy; 2024 ООО "ЧОО "СБ ЗВИ". Все права защищены.</p>
+          <p>&copy; 2024 ЧОП "СБ ЗВИ". Все права защищены.</p>
         </div>
       </div>
     </footer>

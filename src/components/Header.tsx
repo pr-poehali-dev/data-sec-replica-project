@@ -79,8 +79,8 @@ const Header = () => {
               <Icon name="Shield" className="text-white" size={24} />
             </div>
             <div>
-              <h1 className="text-xl font-bold text-secondary">ЧОО "СБ ЗВИ"</h1>
-              <p className="text-xs text-muted-foreground">Центр Безопасности данных</p>
+              <h1 className="text-xl font-bold text-secondary">ЧОП "СБ ЗВИ"</h1>
+              <p className="text-xs text-muted-foreground">Частная охранная организация</p>
             </div>
           </Link>
 

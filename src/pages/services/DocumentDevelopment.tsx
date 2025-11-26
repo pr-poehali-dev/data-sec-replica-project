@@ -346,7 +346,7 @@ const DocumentDevelopment = () => {
         <section className="py-16 bg-secondary text-white">
           <div className="container mx-auto px-4 max-w-4xl text-center">
             <Icon name="Shield" className="mx-auto mb-6" size={48} />
-            <h2 className="text-3xl font-bold mb-4">Центр безопасности данных</h2>
+            <h2 className="text-3xl font-bold mb-4">ЧОП "СБ ЗВИ"</h2>
             <p className="text-xl text-blue-100 mb-6">
               Высокопрофессиональный интегратор систем защиты персональных данных. Лицензиат ФСТЭК России с многолетним опытом успешной реализации проектов.
             </p>
