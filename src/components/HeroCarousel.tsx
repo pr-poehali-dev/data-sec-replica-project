@@ -69,7 +69,7 @@ const slides: Slide[] = [
     image: 'https://cdn.poehali.dev/files/8b5e5198-bee8-4381-b7fa-4578e4336ccf.png',
     primaryButton: {
       text: 'Подробнее',
-      link: '/services/attestation',
+      link: '/services/critical-infrastructure',
     },
     secondaryButton: {
       text: 'Проконсультироваться',
