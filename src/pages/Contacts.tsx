@@ -71,8 +71,8 @@ const Contacts = () => {
                       </CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <p className="text-lg font-semibold text-secondary">Москва, ул. Примерная, 1</p>
-                      <p className="text-sm text-muted-foreground mt-1">БЦ "Безопасность", офис 501</p>
+                      <p className="text-lg font-semibold text-secondary">115093, г. Москва,<br />пер. Партийный, д. 1</p>
+                      <p className="text-sm text-muted-foreground mt-1">ООО "ЧОО "СБ ЗВИ"</p>
                     </CardContent>
                   </Card>
                 </div>

@@ -11,9 +11,10 @@ const Footer = () => {
               <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
                 <Icon name="Shield" className="text-white" size={20} />
               </div>
-              <h3 className="font-bold">Центр Безопасности</h3>
+              <h3 className="font-bold">ЧОО "СБ ЗВИ"</h3>
             </div>
-            <p className="text-sm text-blue-200">Защита информации на профессиональном уровне</p>
+            <p className="text-sm text-blue-200 mb-3">Центр Безопасности данных</p>
+            <p className="text-xs text-blue-200">115093, г. Москва,<br />пер. Партийный, д. 1</p>
           </div>
           <div>
             <h4 className="font-semibold mb-4">Услуги</h4>
@@ -36,12 +37,12 @@ const Footer = () => {
             <ul className="space-y-2 text-sm text-blue-200">
               <li>+7 (495) 123-45-67</li>
               <li>info@security-center.ru</li>
-              <li>Москва, ул. Примерная, 1</li>
+              <li>115093, г. Москва,<br />пер. Партийный, д. 1</li>
             </ul>
           </div>
         </div>
         <div className="border-t border-blue-800 mt-8 pt-8 text-center text-sm text-blue-200">
-          <p>&copy; 2024 Центр Безопасности данных. Все права защищены.</p>
+          <p>&copy; 2024 ООО "ЧОО "СБ ЗВИ". Все права защищены.</p>
         </div>
       </div>
     </footer>
