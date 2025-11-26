@@ -13,7 +13,7 @@ const Header = () => {
       href: '#',
       dropdown: [
         { label: 'Персональные данные', href: '/services/personal-data' },
-        { label: 'Критическая информационная инфраструктура (КИИ)', href: '/services/personal-data' },
+        { label: 'Критическая информационная инфраструктура (КИИ)', href: '/services/critical-infrastructure' },
         { label: 'Конфиденциальная информация', href: '/services/personal-data' },
         { label: 'Аттестация объектов информатизации', href: '/services/attestation' },
         { label: 'Защищенные приложения', href: '/services/attestation' },
