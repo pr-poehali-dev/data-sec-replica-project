@@ -37,7 +37,7 @@ const slides: Slide[] = [
     id: 2,
     title: 'Подготовка к проверкам Роскомнадзора',
     description: 'Поможем привести обработку персональных данных в соответствие требованиям закона с целью успешного прохождения проверки в области персональных данных',
-    image: 'https://cdn.poehali.dev/projects/d2c8f28a-afc1-4869-912c-685feedfe6a4/files/c043964e-10c2-4811-b644-3c8243f4f27a.jpg',
+    image: 'https://cdn.poehali.dev/files/3285f23b-b0c2-4871-958a-463b78cdfe60.png',
     primaryButton: {
       text: 'Подробнее',
       link: '/services/personal-data',
