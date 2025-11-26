@@ -51,7 +51,7 @@ const slides: Slide[] = [
     id: 3,
     title: 'Аудит соответствия обработки персональных данных',
     description: 'Выдача официальных документов, подтверждающих соответствие обработки персональных данных требованиям Федерального закона №152-ФЗ «О персональных данных»',
-    image: 'https://cdn.poehali.dev/projects/d2c8f28a-afc1-4869-912c-685feedfe6a4/files/e27dae87-fd11-40a2-bd8b-b0550418eaef.jpg',
+    image: 'https://cdn.poehali.dev/files/cbca6779-9669-4429-b699-a0c6f19ed397.png',
     primaryButton: {
       text: 'Подробнее',
       link: '/services/personal-data',
