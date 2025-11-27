@@ -13,6 +13,8 @@ import DataAudit from "./pages/services/DataAudit";
 import CriticalInfrastructure from "./pages/services/CriticalInfrastructure";
 import Attestation from "./pages/services/Attestation";
 import Consulting from "./pages/services/Consulting";
+import SecureApps from "./pages/services/SecureApps";
+import SecurityTools from "./pages/services/SecurityTools";
 import Antivirus from "./pages/catalog/Antivirus";
 import AccessControl from "./pages/catalog/AccessControl";
 import TrustedBoot from "./pages/catalog/TrustedBoot";
@@ -51,6 +53,8 @@ const App = () => (
           <Route path="/services/critical-infrastructure" element={<CriticalInfrastructure />} />
           <Route path="/services/attestation" element={<Attestation />} />
           <Route path="/services/consulting" element={<Consulting />} />
+          <Route path="/services/secure-apps" element={<SecureApps />} />
+          <Route path="/services/security-tools" element={<SecurityTools />} />
           <Route path="/catalog/antivirus" element={<Antivirus />} />
           <Route path="/catalog/access-control" element={<AccessControl />} />
           <Route path="/catalog/trusted-boot" element={<TrustedBoot />} />

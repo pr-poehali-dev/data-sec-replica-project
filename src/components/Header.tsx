@@ -16,8 +16,8 @@ const Header = () => {
         { label: 'Критическая информационная инфраструктура (КИИ)', href: '/services/critical-infrastructure' },
         { label: 'Конфиденциальная информация', href: '/services/personal-data' },
         { label: 'Аттестация объектов информатизации', href: '/services/attestation' },
-        { label: 'Защищенные приложения', href: '/services/attestation' },
-        { label: 'Средства защиты информации', href: '/services/attestation' },
+        { label: 'Защищенные приложения', href: '/services/secure-apps' },
+        { label: 'Средства защиты информации', href: '/services/security-tools' },
         { label: 'Консалтинг и обучение', href: '/services/consulting' }
       ]
     },
