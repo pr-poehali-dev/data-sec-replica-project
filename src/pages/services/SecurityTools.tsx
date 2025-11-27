@@ -168,12 +168,12 @@ const SecurityTools = () => {
                 </CardHeader>
                 <CardContent>
                   <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                    <Link to="/contacts">
+                    <a href="tel:+79015000078">
                       <Button size="lg" className="w-full sm:w-auto">
                         <Icon name="Phone" className="mr-2" size={20} />
                         Получить консультацию
                       </Button>
-                    </Link>
+                    </a>
                     <Link to="/catalog/antivirus">
                       <Button size="lg" variant="outline" className="w-full sm:w-auto">
                         <Icon name="BookOpen" className="mr-2" size={20} />

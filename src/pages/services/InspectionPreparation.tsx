@@ -176,11 +176,11 @@ const InspectionPreparation = () => {
                 <p className="text-lg mb-4">
                   Оформите заявку на услугу, мы свяжемся с вами в ближайшее время и ответим на все интересующие вопросы
                 </p>
-                <Link to="/contacts">
+                <a href="tel:+79015000078">
                   <Button size="lg" className="bg-white text-secondary hover:bg-blue-50">
                     Заказать подготовку к проверке
                   </Button>
-                </Link>
+                </a>
               </div>
             </div>
           </div>

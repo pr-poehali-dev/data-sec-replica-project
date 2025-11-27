@@ -192,11 +192,11 @@ const CriticalInfrastructure = () => {
                 <p className="text-lg mb-4">
                   Защитите вашу критическую инфраструктуру от киберугроз и избежите штрафов и уголовной ответственности
                 </p>
-                <Link to="/contacts">
+                <a href="tel:+79015000078">
                   <Button size="lg" className="bg-white text-gray-900 hover:bg-gray-100">
                     Получить консультацию
                   </Button>
-                </Link>
+                </a>
               </div>
             </div>
           </div>

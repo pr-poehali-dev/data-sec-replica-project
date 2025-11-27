@@ -328,11 +328,11 @@ const DocumentDevelopment = () => {
                 Разработка документации занимает 10-20 дней. Получите консультацию специалиста и индивидуальное предложение для вашей организации
               </p>
               <div className="flex flex-wrap gap-4 justify-center">
-                <Link to="/contacts">
+                <a href="tel:+79015000078">
                   <Button size="lg" className="bg-primary hover:bg-blue-700">
                     Заказать разработку документов
                   </Button>
-                </Link>
+                </a>
                 <Link to="/services/personal-data">
                   <Button size="lg" variant="outline">
                     Узнать о комплексной защите ПДн

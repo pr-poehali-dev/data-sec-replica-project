@@ -142,12 +142,12 @@ const SecureApps = () => {
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Link to="/contacts">
+                  <a href="tel:+79015000078">
                     <Button size="lg" className="w-full sm:w-auto">
                       <Icon name="Phone" className="mr-2" size={20} />
                       Связаться с нами
                     </Button>
-                  </Link>
+                  </a>
                 </CardContent>
               </Card>
             </div>

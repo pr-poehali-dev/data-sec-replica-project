@@ -283,12 +283,12 @@ const PersonalData = () => {
                 Узнайте текущий статус вашей компании и что нужно сделать для соответствия требованиям
               </p>
               <div className="flex flex-wrap gap-4 justify-center">
-                <button className="px-8 py-3 bg-white text-primary rounded-lg font-semibold hover:bg-blue-50 transition-colors">
+                <a href="tel:+79015000078" className="px-8 py-3 bg-white text-primary rounded-lg font-semibold hover:bg-blue-50 transition-colors">
                   Заказать аудит
-                </button>
-                <button className="px-8 py-3 bg-transparent border-2 border-white text-white rounded-lg font-semibold hover:bg-white/10 transition-colors">
-                  Скачать чек-лист
-                </button>
+                </a>
+                <a href="tel:+79015000078" className="px-8 py-3 bg-transparent border-2 border-white text-white rounded-lg font-semibold hover:bg-white/10 transition-colors">
+                  Позвонить нам
+                </a>
               </div>
             </div>
           </div>

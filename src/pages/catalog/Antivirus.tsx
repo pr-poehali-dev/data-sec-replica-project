@@ -178,9 +178,9 @@ const Antivirus = () => {
                     </div>
                   </CardHeader>
                   <CardContent>
-                    <button className="w-full md:w-auto px-6 py-3 bg-primary text-white rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+                    <a href="tel:+79015000078" className="inline-block w-full md:w-auto px-6 py-3 bg-primary text-white rounded-lg font-semibold hover:bg-blue-700 transition-colors text-center">
                       Получить консультацию
-                    </button>
+                    </a>
                   </CardContent>
                 </Card>
               ))}
