@@ -4,16 +4,17 @@ Allow: /
 # Yandex
 User-agent: Yandex
 Allow: /
-Crawl-delay: 1
+Crawl-delay: 0.5
 
 # Google
 User-agent: Googlebot
 Allow: /
-Crawl-delay: 1
+Crawl-delay: 0.5
 
 # Bing
 User-agent: Bingbot
 Allow: /
+Crawl-delay: 0.5
 
 # Social
 User-agent: Twitterbot
@@ -22,10 +23,20 @@ Allow: /
 User-agent: facebookexternalhit
 Allow: /
 
-# Sitemap
+# Sitemaps
 Sitemap: https://xn--80aaeib5aai5bc5eh.xn--p1ai/sitemap.xml
 
 # Disallow internal paths
 Disallow: /admin/
 Disallow: /_internal/
 Disallow: /api/
+
+# Allow CSS, JS and images
+Allow: *.css
+Allow: *.js
+Allow: *.jpg
+Allow: *.jpeg
+Allow: *.png
+Allow: *.gif
+Allow: *.svg
+Allow: *.webp
