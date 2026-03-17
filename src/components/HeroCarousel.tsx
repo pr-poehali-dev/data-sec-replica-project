@@ -24,7 +24,7 @@ const slides: Slide[] = [
     id: 1,
     title: 'Приведение в соответствие Закону о персональных данных',
     description: 'Поможем разработать и внедрить комплект организационно-распорядительной документации по вопросам обработки и защиты персональных данных',
-    image: 'https://cdn.poehali.dev/files/1c88f054-68f6-49d0-8605-4adca4e038b0.png',
+    image: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?w=1600&q=80',
     primaryButton: {
       text: 'Подробнее',
       link: '/services/document-development',
@@ -38,7 +38,7 @@ const slides: Slide[] = [
     id: 2,
     title: 'Подготовка к проверкам Роскомнадзора',
     description: 'Поможем привести обработку персональных данных в соответствие требованиям закона с целью успешного прохождения проверки в области персональных данных',
-    image: 'https://cdn.poehali.dev/files/3285f23b-b0c2-4871-958a-463b78cdfe60.png',
+    image: 'https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=1600&q=80',
     primaryButton: {
       text: 'Подробнее',
       link: '/services/inspection-preparation',
@@ -52,7 +52,7 @@ const slides: Slide[] = [
     id: 3,
     title: 'Аудит соответствия обработки персональных данных',
     description: 'Выдача официальных документов, подтверждающих соответствие обработки персональных данных требованиям Федерального закона №152-ФЗ «О персональных данных»',
-    image: 'https://cdn.poehali.dev/files/cbca6779-9669-4429-b699-a0c6f19ed397.png',
+    image: 'https://images.unsplash.com/photo-1510511459019-5dda7724fd87?w=1600&q=80',
     primaryButton: {
       text: 'Подробнее',
       link: '/services/data-audit',
@@ -66,7 +66,7 @@ const slides: Slide[] = [
     id: 4,
     title: 'Обеспечение безопасности объектов КИИ',
     description: 'Услуги по категорированию и обеспечению безопасности объектов критической информационной инфраструктуры в соответствии с требованиями Федерального закона №187-ФЗ',
-    image: 'https://cdn.poehali.dev/files/8b5e5198-bee8-4381-b7fa-4578e4336ccf.png',
+    image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1600&q=80',
     primaryButton: {
       text: 'Подробнее',
       link: '/services/critical-infrastructure',
