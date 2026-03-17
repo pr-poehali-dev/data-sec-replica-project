@@ -290,7 +290,7 @@ const InspectionPreparation = () => {
           <div className="container mx-auto px-4 max-w-6xl">
             <h2 className="text-3xl font-bold text-secondary mb-4 text-center">Наши услуги по подготовке к проверке</h2>
             <p className="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
-              Специалисты ЧОП "СБ ЗВИ" имеют большой опыт взаимодействия с Роскомнадзором в ходе контрольных мероприятий
+              Специалисты ИНФОБЕЗ имеют большой опыт взаимодействия с Роскомнадзором в ходе контрольных мероприятий
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mb-16">
