@@ -59,7 +59,7 @@ const Contacts = () => {
                   </CardHeader>
                   <CardContent>
                     <p className="text-lg font-semibold text-secondary">115093, г. Москва,<br />пер. Партийный, д. 1</p>
-                    <p className="text-sm text-muted-foreground mt-1">ЧОП "СБ ЗВИ"</p>
+                    <p className="text-sm text-muted-foreground mt-1">ИНФОБЕЗ</p>
                   </CardContent>
                 </Card>
               </div>
@@ -77,7 +77,7 @@ const Contacts = () => {
                   width="100%"
                   height="400"
                   frameBorder="0"
-                  title="Карта офиса ЧОП СБ ЗВИ"
+                  title="Карта офиса ИНФОБЕЗ"
                   className="w-full"
                 ></iframe>
               </div>
