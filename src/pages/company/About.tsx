@@ -20,9 +20,7 @@ const About = () => {
                 </div>
                 <h1 className="text-2xl md:text-4xl font-bold">О компании</h1>
               </div>
-              <p className="text-xl text-blue-100">
-                ЧОП "СБ ЗВИ" — надежный партнер в области информационной безопасности
-              </p>
+              <p className="text-xl text-blue-100">ИНФОБЕЗ — надежный партнер в области информационной безопасности</p>
             </div>
           </div>
         </section>
