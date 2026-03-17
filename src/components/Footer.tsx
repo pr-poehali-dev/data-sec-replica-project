@@ -54,7 +54,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="border-t border-blue-800 mt-8 pt-8 text-center text-sm text-blue-200">
-          <p>&copy; 2024 ЧОП "СБ ЗВИ". Все права защищены.</p>
+          <p>© 2024 ИНФОБЕЗ. Все права защищены.</p>
         </div>
       </div>
     </footer>
